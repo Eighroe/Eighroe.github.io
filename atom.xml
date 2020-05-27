@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://eighroe.github.io/"/>
-  <updated>2020-05-27T08:28:35.794Z</updated>
+  <updated>2020-05-27T10:19:25.547Z</updated>
   <id>http://eighroe.github.io/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <title>如何查看某个端口被谁占用，结束进程</title>
     <link href="http://eighroe.github.io/2020/05/27/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E8%A2%AB%E8%B0%81%E5%8D%A0%E7%94%A8%EF%BC%8C%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/"/>
     <id>http://eighroe.github.io/2020/05/27/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E8%A2%AB%E8%B0%81%E5%8D%A0%E7%94%A8%EF%BC%8C%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/</id>
-    <published>2020-05-27T08:26:22.383Z</published>
-    <updated>2020-05-27T08:28:35.794Z</updated>
+    <published>2020-05-26T17:02:13.000Z</published>
+    <updated>2020-05-27T10:19:25.547Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="如何查看某个端口被谁占用，结束进程"><a href="#如何查看某个端口被谁占用，结束进程" class="headerlink" title="如何查看某个端口被谁占用，结束进程"></a>如何查看某个端口被谁占用，结束进程</h1><h2 id="1-开始—-gt-运行—-gt-cmd，或者是window-R组合键，调出命令窗口"><a href="#1-开始—-gt-运行—-gt-cmd，或者是window-R组合键，调出命令窗口" class="headerlink" title="1.开始—-&gt;运行—-&gt;cmd，或者是window+R组合键，调出命令窗口"></a>1.开始—-&gt;运行—-&gt;cmd，或者是window+R组合键，调出命令窗口</h2><p><img src="/2020/05/27/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E8%A2%AB%E8%B0%81%E5%8D%A0%E7%94%A8%EF%BC%8C%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/C:%5CUsers%5CAdministrator%5Cblog%5Csource_posts%5Chexo%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E5%AF%BC%E5%85%A5%5C1.png" alt="1"></p><h2 id="2-输入命令：netstat-ano，列出所有端口的情况。在列表中我们观察被占用的端口，比如是49157，首先找到它。"><a href="#2-输入命令：netstat-ano，列出所有端口的情况。在列表中我们观察被占用的端口，比如是49157，首先找到它。" class="headerlink" title="2.输入命令：netstat -ano，列出所有端口的情况。在列表中我们观察被占用的端口，比如是49157，首先找到它。"></a>2.输入命令：netstat -ano，列出所有端口的情况。在列表中我们观察被占用的端口，比如是49157，首先找到它。</h2><p><img src="/2020/05/27/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E8%A2%AB%E8%B0%81%E5%8D%A0%E7%94%A8%EF%BC%8C%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/C:%5CUsers%5CAdministrator%5Cblog%5Csource_posts%5Chexo%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E5%AF%BC%E5%85%A5%5C4.png" alt="2"></p><h2 id="3-查看被占用端口对应的PID，输入命令：netstat-aon-findstr-“9010”，回车，记下最后一位数字，即PID-这里是2900。"><a href="#3-查看被占用端口对应的PID，输入命令：netstat-aon-findstr-“9010”，回车，记下最后一位数字，即PID-这里是2900。" class="headerlink" title="3.查看被占用端口对应的PID，输入命令：netstat -aon|findstr “9010”，回车，记下最后一位数字，即PID,这里是2900。"></a>3.查看被占用端口对应的PID，输入命令：netstat -aon|findstr “9010”，回车，记下最后一位数字，即PID,这里是2900。</h2><h2 id="4-继续输入tasklist-findstr-“2900”，回车，查看是哪个进程或者程序占用了2900端口，结果是：lghub-agent-exe"><a href="#4-继续输入tasklist-findstr-“2900”，回车，查看是哪个进程或者程序占用了2900端口，结果是：lghub-agent-exe" class="headerlink" title="4.继续输入tasklist|findstr “2900”，回车，查看是哪个进程或者程序占用了2900端口，结果是：lghub_agent.exe"></a>4.继续输入tasklist|findstr “2900”，回车，查看是哪个进程或者程序占用了2900端口，结果是：lghub_agent.exe</h2><p><img src="/2020/05/27/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E8%A2%AB%E8%B0%81%E5%8D%A0%E7%94%A8%EF%BC%8C%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/C:%5CUsers%5CAdministrator%5Cblog%5Csource_posts%5Chexo%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E5%AF%BC%E5%85%A5%5C3.png" alt="3"></p><h2 id="5-结束该进程：在任务管理器中选中该进程点击”结束进程“按钮，或者是在cmd的命令窗口中输入：taskkill-f-t-im-lghub-agent-exe"><a href="#5-结束该进程：在任务管理器中选中该进程点击”结束进程“按钮，或者是在cmd的命令窗口中输入：taskkill-f-t-im-lghub-agent-exe" class="headerlink" title="5.结束该进程：在任务管理器中选中该进程点击”结束进程“按钮，或者是在cmd的命令窗口中输入：taskkill /f /t /im lghub_agent.exe"></a>5.结束该进程：在任务管理器中选中该进程点击”结束进程“按钮，或者是在cmd的命令窗口中输入：taskkill /f /t /im lghub_agent.exe</h2>]]></content>
+    <content type="html"><![CDATA[<h1 id="如何查看某个端口被谁占用，结束进程"><a href="#如何查看某个端口被谁占用，结束进程" class="headerlink" title="如何查看某个端口被谁占用，结束进程"></a>如何查看某个端口被谁占用，结束进程</h1><h2 id="1-开始—-gt-运行—-gt-cmd，或者是window-R组合键，调出命令窗口"><a href="#1-开始—-gt-运行—-gt-cmd，或者是window-R组合键，调出命令窗口" class="headerlink" title="1.开始—-&gt;运行—-&gt;cmd，或者是window+R组合键，调出命令窗口"></a>1.开始—-&gt;运行—-&gt;cmd，或者是window+R组合键，调出命令窗口</h2><p><img src="/2020/05/27/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E8%A2%AB%E8%B0%81%E5%8D%A0%E7%94%A8%EF%BC%8C%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/1.png" alt="1"></p><h2 id="2-输入命令：netstat-ano，列出所有端口的情况。在列表中我们观察被占用的端口，比如是9010，首先找到它。"><a href="#2-输入命令：netstat-ano，列出所有端口的情况。在列表中我们观察被占用的端口，比如是9010，首先找到它。" class="headerlink" title="2.输入命令：netstat -ano，列出所有端口的情况。在列表中我们观察被占用的端口，比如是9010，首先找到它。"></a>2.输入命令：netstat -ano，列出所有端口的情况。在列表中我们观察被占用的端口，比如是9010，首先找到它。</h2><p><img src="/2020/05/27/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E8%A2%AB%E8%B0%81%E5%8D%A0%E7%94%A8%EF%BC%8C%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/4.png" alt="2"></p><h2 id="3-查看被占用端口对应的PID，输入命令：netstat-aon-findstr-“9010”，回车，记下最后一位数字，即PID-这里是2900。"><a href="#3-查看被占用端口对应的PID，输入命令：netstat-aon-findstr-“9010”，回车，记下最后一位数字，即PID-这里是2900。" class="headerlink" title="3.查看被占用端口对应的PID，输入命令：netstat -aon|findstr “9010”，回车，记下最后一位数字，即PID,这里是2900。"></a>3.查看被占用端口对应的PID，输入命令：netstat -aon|findstr “9010”，回车，记下最后一位数字，即PID,这里是2900。</h2><h2 id="4-继续输入tasklist-findstr-“2900”，回车，查看是哪个进程或者程序占用了2900端口，结果是：lghub-agent-exe"><a href="#4-继续输入tasklist-findstr-“2900”，回车，查看是哪个进程或者程序占用了2900端口，结果是：lghub-agent-exe" class="headerlink" title="4.继续输入tasklist|findstr “2900”，回车，查看是哪个进程或者程序占用了2900端口，结果是：lghub_agent.exe"></a>4.继续输入tasklist|findstr “2900”，回车，查看是哪个进程或者程序占用了2900端口，结果是：lghub_agent.exe</h2><p><img src="/2020/05/27/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E8%A2%AB%E8%B0%81%E5%8D%A0%E7%94%A8%EF%BC%8C%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/3.png" alt="3"></p><h2 id="5-结束该进程：在任务管理器中选中该进程点击”结束进程“按钮，或者是在cmd的命令窗口中输入：taskkill-f-t-im-lghub-agent-exe"><a href="#5-结束该进程：在任务管理器中选中该进程点击”结束进程“按钮，或者是在cmd的命令窗口中输入：taskkill-f-t-im-lghub-agent-exe" class="headerlink" title="5.结束该进程：在任务管理器中选中该进程点击”结束进程“按钮，或者是在cmd的命令窗口中输入：taskkill /f /t /im lghub_agent.exe"></a>5.结束该进程：在任务管理器中选中该进程点击”结束进程“按钮，或者是在cmd的命令窗口中输入：taskkill /f /t /im lghub_agent.exe</h2>]]></content>
     
     <summary type="html">
     
@@ -36,6 +36,8 @@
     
     
     
+      <category term="ceshi" scheme="http://eighroe.github.io/tags/ceshi/"/>
+    
   </entry>
   
   <entry>
@@ -43,7 +45,7 @@
     <link href="http://eighroe.github.io/2020/04/13/hexo%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E5%AF%BC%E5%85%A5/"/>
     <id>http://eighroe.github.io/2020/04/13/hexo%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E5%AF%BC%E5%85%A5/</id>
     <published>2020-04-12T17:02:13.000Z</published>
-    <updated>2020-05-17T14:12:17.304Z</updated>
+    <updated>2020-05-27T10:06:51.794Z</updated>
     
     <content type="html"><![CDATA[<h2 id="图片测试"><a href="#图片测试" class="headerlink" title="图片测试"></a>图片测试</h2><p><img src="/2020/04/13/hexo%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E5%AF%BC%E5%85%A5/2.png" alt="代码"></p>]]></content>
     
