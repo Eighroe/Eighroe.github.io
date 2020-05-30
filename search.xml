@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo本地图片导入</title>
+    <url>/2020/04/13/hexo%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E5%AF%BC%E5%85%A5/</url>
+    <content><![CDATA[<h2 id="图片测试"><a href="#图片测试" class="headerlink" title="图片测试"></a>图片测试</h2><p><img src="/2020/04/13/hexo%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E5%AF%BC%E5%85%A5/2.png" alt="代码"></p>
+]]></content>
+      <tags>
+        <tag>ceshi</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2020/04/12/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
@@ -22,9 +31,13 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo本地图片导入</title>
-    <url>/2020/04/13/hexo%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E5%AF%BC%E5%85%A5/</url>
-    <content><![CDATA[<h2 id="图片测试"><a href="#图片测试" class="headerlink" title="图片测试"></a>图片测试</h2><p><img src="/2020/04/13/hexo%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E5%AF%BC%E5%85%A5/2.png" alt="代码"></p>
+    <title>我的第一篇博客</title>
+    <url>/2020/04/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
+<hr>
+<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容 </p>
+<hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="http://www.baidu.com" target="_blank" rel="noopener">www.baidu.com</a></p>
 ]]></content>
       <tags>
         <tag>ceshi</tag>
@@ -42,16 +55,99 @@
       </tags>
   </entry>
   <entry>
-    <title>我的第一篇博客</title>
-    <url>/2020/04/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
-<hr>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容 </p>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="http://www.baidu.com" target="_blank" rel="noopener">www.baidu.com</a></p>
+    <title>nodeJS、npm的安装和配置</title>
+    <url>/2020/05/30/nodeJS%E3%80%81npm%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="nodeJS、npm的安装和配置"><a href="#nodeJS、npm的安装和配置" class="headerlink" title="nodeJS、npm的安装和配置"></a>nodeJS、npm的安装和配置</h1><h3 id="一、理清关系"><a href="#一、理清关系" class="headerlink" title="一、理清关系"></a>一、理清关系</h3><p>首先是自己遇到的几个问题：</p>
+<p>前提是我现在下载了一个VUE相关的代码，想运行起来，然后查了各种相关的东西，需要什么npm webpack node。。。总之有点混乱，于是先整理了几个问题，如下：</p>
+<p>1、webpack和node的关系是什么？</p>
+<p>2、如果我只想用npm，不想安装node，可以吗？</p>
+<p>3、vue和webpack npm的关系又是什么？</p>
+<p>依赖于这三个问题，来理清一下这三者的最终关系。</p>
+<p>（1）vue.js是前端的一个框架，写出来的都是一个个vue文件，这些文件是浏览器不识别的文件，所以需要以来一种工具把vue文件转换为浏览器可识别的文件。</p>
+<p>（2）OK，webpack就是这个工具，它可以将这些文件进行打包，完成这个功能。</p>
+<p>（3）webpack打包需要依赖npm，而npm是依赖于Node.js环境的。</p>
+<p>所以，总结下来就是：webpack依赖node.js环境，将vue文件打包为浏览器可以直接识别的文件，在浏览器里面运行。</p>
+<h3 id="二、nodeJs、npm的安装和配置"><a href="#二、nodeJs、npm的安装和配置" class="headerlink" title="二、nodeJs、npm的安装和配置"></a>二、nodeJs、npm的安装和配置</h3><p>下面的内容是参考此链接：<a href="https://jingyan.baidu.com/article/48b37f8dd141a646488bc.html" target="_blank" rel="noopener">https://jingyan.baidu.com/article/48b37f8dd141a646488bc.html</a></p>
+<p>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。 Node.js 的使用包管理器 npm来管理所有模块的安装、配置、删除等操作，使用起来非常方便，但是想要配置好npm的使用环境还是稍微有点复杂，下面跟着我一起来学习在windows系统上配置NodeJS和NPM吧。 </p>
+<h2 id="安装NodeJS和NPM"><a href="#安装NodeJS和NPM" class="headerlink" title="安装NodeJS和NPM"></a>安装NodeJS和NPM</h2><ol>
+<li><p>1</p>
+<p>打开NodeJS的官网，默认的情况主页就提供了Windows版本的下载链接，我们下载8.12.0 LTS版，LTS代表长期支持版本，一般新手建议使用这个版本，因为这个版本使用的人最多，出问题能找到解决方案的概率较大。如下图所示：</p>
+<p><img src="/2020/05/30/nodeJS%E3%80%81npm%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/1.png" alt="img"></p>
+</li>
+<li><p>2</p>
+<p>下载完成后双击下载好的node-v8.12.0-x64文件开始安装，点击next进入下一步，勾选同意协议，继续下一步。然后选择安装的位置，默认是在C盘，改成D盘安装，这是个好习惯，建议保持。然后进入模块配置步骤。</p>
+<p>一路next</p>
+</li>
+<li><p>3</p>
+<p>这一步是选择安装哪些模块，默认是全部安装，对于新手来说建议全部安装。点开那个add path选项前面的+号，我们看到，会主动把NodeJS和NPM这两个模块的命令路径添加到系统路径里，对于我们来说就非常方便了。点击next继续下一步，然后确认信息，点击Install开始安装，然后程序就开始复制文件等一系列步骤。一直到安装完毕。4</p>
+</li>
+<li><p>4</p>
+<p>安装完毕后点击finish结束安装进程，然后在开始搜索栏输入nodejs，点运行。输入cmd后敲回车，在打开的命令行界面，依次输入命令：</p>
+<p>node -v</p>
+<p>npm -v</p>
+<p>如果正确输出版本号，说明我们的NodeJS和NPM就安装好了，如下图所示：</p>
+<p><img src="/2020/05/30/nodeJS%E3%80%81npm%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/2.png" alt="img"></p>
+<p>END</p>
+</li>
+</ol>
+<h2 id="配置NodeJS和NPM"><a href="#配置NodeJS和NPM" class="headerlink" title="配置NodeJS和NPM"></a>配置NodeJS和NPM</h2><ol>
+<li><p>1</p>
+<p>并不是说NodeJS和NPM安装好了以后就能直接使用了，这也是新手经常犯的一个错误之一。因为默认情况下，NPM安装的模块并不会安装到NodeJS的程序目录，比如上面安装的时候我们设置的D:\Program Files\nodejs\目录。</p>
+</li>
+<li><p>3</p>
+<p>这里我们要分两步，第一步修改NPM的缓存目录和全局目录路径，将对应的模块目录改到D盘nodejs的安装目录，第二步是配置npm和nodejs的环境变量，这样nodejs才能正确地调用对应的模块。</p>
+<p>我们先来做第一步，在D盘nodejs目录下创建两个目录，分别是node_cache和node_global，这是用来放安装过程的缓存文件以及最终的模块配置位置。配置完成后，执行下面这两个命令：</p>
+<p>npm config set prefix “D:\Program Files\nodejs\node_global”</p>
+<p>npm config set cache “D:\Program Files\nodejs\node_cache”</p>
+<p>将npm的全局模块目录和缓存目录配置到我们刚才创建的那两个目录：</p>
+</li>
+<li><p>4</p>
+<p>然后我们打开cmd命令行界面，在使用命令安装cluster模块，命令如下：</p>
+<p>npm install cluster -g</p>
+<p>然后打开刚才创建的node_global目录，可以看到此时cluster目录就安装到这个目录底下了。</p>
+<p><img src="/2020/05/30/nodeJS%E3%80%81npm%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/3.png" alt="img"></p>
+</li>
+</ol>
+<ol start="4">
+<li><p>5</p>
+<p>然后我们来配置npm的环境变量和nodejs的环境变量。在计算机图标上点右键，选属性，然后点击高级系统配置，弹出来的新窗口右下角有个环境路径，点击去，就能看到环境路径的配置界面，我们点击新建。(注意：该处是新建用户变量，而不是系统变量)  然后在弹出来的窗口里，变量名填：NODE_PATH</p>
+<p>变量值填：D:\Program Files\nodejs\node_modules\</p>
+<p>填写好后点确定，然后就能看到我们配置好的NPM环境路径。</p>
+<p><img src="/2020/05/30/nodeJS%E3%80%81npm%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/4.png" alt="img"></p>
+</li>
+<li><p>6</p>
+<p>此时还需要修改一些nodejs默认的模块调用路径，因为模块的安装位置变了，如果nodejs的命令还到原来的位置去找，肯定是找不到安装的模块了。我们在环境变量窗口，选择Path，然后点击右下角的编辑，然后选择npm那个。点击右边的编辑，将其修改为：D:\program\node\node_global\</p>
+<p>然后点确定，保存这个配置。</p>
+</li>
+<li><p>7</p>
+<p>这个时候所有的配置工作才算完成了，然后打开一个新的cmd窗口。先输入命令：</p>
+<p>node</p>
+<p>进入nodejs的交互式命令控制台，然后输入：</p>
+<p>require(‘cluster’)</p>
+<p>如果能正常输出cluster模块的信息，说明上面的所有配置就算生效了。</p>
+<p><img src="/2020/05/30/nodeJS%E3%80%81npm%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/5.png" alt="img"></p>
+</li>
+<li><p>8</p>
+<p>我们还需要做的最后一个工作是，将npm的模块下载仓库从默认的国外站点改为国内的站点，这样下载模块的速度才能比较快，只需要一个命令即可，命令是：</p>
+<p>npm –registry <a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a> install cluster</p>
+<p>上面的命令是临时使用国内一家npm源的地址来安装cluster模块。从下面图中可以看到，速度非常快。只用了不到0.8秒。而我们上面第一次安装的时候用了差不多3秒多，速度快了3倍多。</p>
+<p> <img src="/2020/05/30/nodeJS%E3%80%81npm%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/6.png" alt="img"></p>
+<p>如果想一直使用这个源的地址，那么可以使用下面这个命令来配置。</p>
+<p>npm install -g cnpm –registry=registry_url</p>
+<p>registry_url指的是国内提供的一些npm仓库地址，常用的有：</p>
+<p><a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></p>
+<p><a href="http://r.cnpmjs.org/" target="_blank" rel="noopener">http://r.cnpmjs.org/</a></p>
+<p>这两个都可以使用。如下面第二张图所示，配置好国内源后，安装一个较大的模块express，只用了不到6秒多一点，速度提升还是非常可观的。至此，nodejs和npm在windows上的配置就全部完毕。</p>
+<p>如何运行vue项目：</p>
+<p>参考：<a href="https://www.cnblogs.com/pengjunhao/p/6762141.html" target="_blank" rel="noopener">https://www.cnblogs.com/pengjunhao/p/6762141.html</a></p>
+</li>
+</ol>
 ]]></content>
+      <categories>
+        <category>-node配置</category>
+      </categories>
       <tags>
-        <tag>ceshi</tag>
+        <tag>环境配置</tag>
       </tags>
   </entry>
 </search>
