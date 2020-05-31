@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://eighroe.github.io/"/>
-  <updated>2020-05-30T09:48:09.239Z</updated>
+  <updated>2020-05-31T09:56:54.926Z</updated>
   <id>http://eighroe.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何运行vue项目</title>
+    <link href="http://eighroe.github.io/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/"/>
+    <id>http://eighroe.github.io/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/</id>
+    <published>2020-05-31T06:04:15.000Z</published>
+    <updated>2020-05-31T09:56:54.926Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="如何运行vue项目"><a href="#如何运行vue项目" class="headerlink" title="如何运行vue项目"></a>如何运行vue项目</h1><p><strong>安装node.js</strong></p><p>从<a href="https://nodejs.org/en/http://" target="_blank" rel="noopener">node.js官网</a>下载并安装node，安装过程很简单，一路“下一步”就可以了（傻瓜式安装）。</p><p>安装完成之后，打开命令行工具，输入 node -v，如下图，如果出现相应的版本号，则说明安装成功。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/11.jpg" alt="img"></p><p>npm包管理器，是集成在node中的，所以，直接输入 npm -v就会如下图所示，显示出npm的版本信息。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/12.jpg" alt="img"></p><p>OK！node环境已经安装完成，npm包管理器也有了。由于有些npm有些资源被屏蔽或者是国外资源的原因，经常会导致用npm安装依赖包的时候失败，所有我还需要npm的国内镜像—cnpm。</p><h2 id="安装cnpm"><a href="#安装cnpm" class="headerlink" title="安装cnpm"></a>安装cnpm</h2><p>在命令行中输入 npm install -g cnpm –registry=<a href="http://registry.npm.taobao.org" target="_blank" rel="noopener">http://registry.npm.taobao.org</a> 然后等待，安装完成如下图。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/13.jpg" alt="img"></p><p>完成之后，我们就可以用cnpm代替npm来安装依赖包了。如果想进一步了解cnpm的，查看<a href="https://npm.taobao.org/http://" target="_blank" rel="noopener">淘宝npm镜像官网</a>。</p><h2 id="安装vue-cli脚手架构建工具"><a href="#安装vue-cli脚手架构建工具" class="headerlink" title="安装vue-cli脚手架构建工具"></a>安装vue-cli脚手架构建工具</h2><p>在命令行中运行命令 cnpm install -g vue-cli ，然后等待安装完成。(注意，这里使用cnpm来替代npm，不然速度超级慢，会导致卡在那)</p><p>通过以上三部，我们需要准备的环境和工具都准备好了，接下来就开始使用vue-cli来构建项目。</p><h2 id="用vue-cli构建项目"><a href="#用vue-cli构建项目" class="headerlink" title="用vue-cli构建项目"></a>用vue-cli构建项目</h2><p>要创建项目，首先我们要选定目录，然后再命令行中把目录转到选定的目录。在这里，我选择桌面来存放新建的项目，则我们需要先把目录cd到桌面，如下图。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/14.jpg" alt="img"></p><p>在桌面目录下，在命令行中运行命令 vue init webpack firstVue 。解释一下这个命令，这个命令的意思是初始化一个项目，其中webpack是构建工具，也就是整个项目是基于webpack的。其中firstVue是整个项目文件夹的名称，这个文件夹会自动生成在你指定的目录中（我的实例中，会在桌面生成该文件夹），如下图。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/15.jpg" alt="img"></p><p>运行初始化命令的时候回让用户输入几个基本的选项，如项目名称，描述，作者等信息，如果不想填直接回车默认就好。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/16.jpg" alt="img"></p><p>打开firstVue文件夹，项目文件如下所示。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/17.jpg" alt="img"></p><p>这就是整个项目的目录结构，其中，我们主要在src目录中做修改。这个项目现在还只是一个结构框架，整个项目需要的依赖资源都还没有安装，如下图。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/18.jpg" alt="img"></p><h2 id="安装项目所需的依赖"><a href="#安装项目所需的依赖" class="headerlink" title="安装项目所需的依赖"></a>安装项目所需的依赖</h2><p>要安装依赖包，首先cd到项目文件夹（firstVue文件夹），然后运行命令 cnpm install ，等待安装。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/19.jpg" alt="img"></p><p>安装完成之后，会在我们的项目目录firstVue文件夹中多出一个node_modules文件夹，这里边就是我们项目需要的依赖包资源。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/20.jpg" alt="img"></p><p>安装完依赖包之后，就可以运行整个项目了。</p><h2 id="运行项目"><a href="#运行项目" class="headerlink" title="运行项目"></a>运行项目</h2><p>在项目目录中，运行命令 npm run dev ，会用热加载的方式运行我们的应用，热加载可以让我们在修改完代码后不用手动刷新浏览器就能实时看到修改后的效果。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/21.jpg" alt="img"></p><p>这里简单介绍下 npm run dev 命令，其中的“run”对应的是package.json文件中，scripts字段中的dev，也就是 node build/dev-server.js命令的一个快捷方式。</p><p>项目运行成功后，浏览器会自动打开localhost:8080（如果浏览器没有自动打开，可以手动输入）。运行成功后，会看到如下所示的界面。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/22.jpg" alt="img"></p><p>如果看到这个页面，说明项目运行成功了。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;如何运行vue项目&quot;&gt;&lt;a href=&quot;#如何运行vue项目&quot; class=&quot;headerlink&quot; title=&quot;如何运行vue项目&quot;&gt;&lt;/a&gt;如何运行vue项目&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;安装node.js&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;从&lt;a href=&quot;https://nodejs.org/en/http://&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;node.js官网&lt;/a&gt;下载并安装node，安装过程很简单，一路“下一步”就可以了（傻瓜式安装）。&lt;/p&gt;
+&lt;p&gt;安装完成之后，打开命令行工具，输入 node -v，如下图，如果出现相应的版本号，则说明安装成功。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/11.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;p&gt;npm包管理器，是集成在node中的，所以，直接输入 npm -v就会如下图所示，显示出npm的版本信息。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/12.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;p&gt;OK！node环境已经安装完成，npm包管理器也有了。由于有些npm有些资源被屏蔽或者是国外资源的原因，经常会导致用npm安装依赖包的时候失败，所有我还需要npm的国内镜像—cnpm。&lt;/p&gt;
+&lt;h2 id=&quot;安装cnpm&quot;&gt;&lt;a href=&quot;#安装cnpm&quot; class=&quot;headerlink&quot; title=&quot;安装cnpm&quot;&gt;&lt;/a&gt;安装cnpm&lt;/h2&gt;&lt;p&gt;在命令行中输入 npm install -g cnpm –registry=&lt;a href=&quot;http://registry.npm.taobao.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://registry.npm.taobao.org&lt;/a&gt; 然后等待，安装完成如下图。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="vue" scheme="http://eighroe.github.io/categories/vue/"/>
+    
+    
+      <category term="vue" scheme="http://eighroe.github.io/tags/vue/"/>
+    
+  </entry>
   
   <entry>
     <title>nodeJS、npm的安装和配置</title>
@@ -27,10 +57,14 @@
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;nodeJS、npm的安装和配置&quot;&gt;&lt;a href=&quot;#nodeJS、npm的安装和配置&quot; class=&quot;headerlink&quot; title=&quot;nodeJS、npm的安装和配置&quot;&gt;&lt;/a&gt;nodeJS、npm的安装和配置&lt;/h1&gt;&lt;h3 id=&quot;一、理清关系&quot;&gt;&lt;
-      
+      &lt;h1 id=&quot;nodeJS、npm的安装和配置&quot;&gt;&lt;a href=&quot;#nodeJS、npm的安装和配置&quot; class=&quot;headerlink&quot; title=&quot;nodeJS、npm的安装和配置&quot;&gt;&lt;/a&gt;nodeJS、npm的安装和配置&lt;/h1&gt;&lt;h3 id=&quot;一、理清关系&quot;&gt;&lt;a href=&quot;#一、理清关系&quot; class=&quot;headerlink&quot; title=&quot;一、理清关系&quot;&gt;&lt;/a&gt;一、理清关系&lt;/h3&gt;&lt;p&gt;首先是自己遇到的几个问题：&lt;/p&gt;
+&lt;p&gt;前提是我现在下载了一个VUE相关的代码，想运行起来，然后查了各种相关的东西，需要什么npm webpack node。。。总之有点混乱，于是先整理了几个问题，如下：&lt;/p&gt;
+&lt;p&gt;1、webpack和node的关系是什么？&lt;/p&gt;
+&lt;p&gt;2、如果我只想用npm，不想安装node，可以吗？&lt;/p&gt;
+&lt;p&gt;3、vue和webpack npm的关系又是什么？&lt;/p&gt;
+&lt;p&gt;依赖于这三个问题，来理清一下这三者的最终关系。&lt;/p&gt;
+&lt;p&gt;（1）vue.js是前端的一个框架，写出来的都是一个个vue文件，这些文件是浏览器不识别的文件，所以需要以来一种工具把vue文件转换为浏览器可识别的文件。&lt;/p&gt;
+&lt;p&gt;（2）OK，webpack就是这个工具，它可以将这些文件进行打包，完成这个功能。&lt;/p&gt;
     
     </summary>
     
@@ -53,10 +87,10 @@
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;如何查看某个端口被谁占用，结束进程&quot;&gt;&lt;a href=&quot;#如何查看某个端口被谁占用，结束进程&quot; class=&quot;headerlink&quot; title=&quot;如何查看某个端口被谁占用，结束进程&quot;&gt;&lt;/a&gt;如何查看某个端口被谁占用，结束进程&lt;/h1&gt;&lt;h2 id=&quot;1-开始—
-      
+      &lt;h1 id=&quot;如何查看某个端口被谁占用，结束进程&quot;&gt;&lt;a href=&quot;#如何查看某个端口被谁占用，结束进程&quot; class=&quot;headerlink&quot; title=&quot;如何查看某个端口被谁占用，结束进程&quot;&gt;&lt;/a&gt;如何查看某个端口被谁占用，结束进程&lt;/h1&gt;&lt;h2 id=&quot;1-开始—-gt-运行—-gt-cmd，或者是window-R组合键，调出命令窗口&quot;&gt;&lt;a href=&quot;#1-开始—-gt-运行—-gt-cmd，或者是window-R组合键，调出命令窗口&quot; class=&quot;headerlink&quot; title=&quot;1.开始—-&amp;gt;运行—-&amp;gt;cmd，或者是window+R组合键，调出命令窗口&quot;&gt;&lt;/a&gt;1.开始—-&amp;gt;运行—-&amp;gt;cmd，或者是window+R组合键，调出命令窗口&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/2020/05/27/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E8%A2%AB%E8%B0%81%E5%8D%A0%E7%94%A8%EF%BC%8C%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/1.png&quot; alt=&quot;1&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-输入命令：netstat-ano，列出所有端口的情况。在列表中我们观察被占用的端口，比如是9010，首先找到它。&quot;&gt;&lt;a href=&quot;#2-输入命令：netstat-ano，列出所有端口的情况。在列表中我们观察被占用的端口，比如是9010，首先找到它。&quot; class=&quot;headerlink&quot; title=&quot;2.输入命令：netstat -ano，列出所有端口的情况。在列表中我们观察被占用的端口，比如是9010，首先找到它。&quot;&gt;&lt;/a&gt;2.输入命令：netstat -ano，列出所有端口的情况。在列表中我们观察被占用的端口，比如是9010，首先找到它。&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/2020/05/27/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E8%A2%AB%E8%B0%81%E5%8D%A0%E7%94%A8%EF%BC%8C%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/4.png&quot; alt=&quot;2&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;3-查看被占用端口对应的PID，输入命令：netstat-aon-findstr-“9010”，回车，记下最后一位数字，即PID-这里是2900。&quot;&gt;&lt;a href=&quot;#3-查看被占用端口对应的PID，输入命令：netstat-aon-findstr-“9010”，回车，记下最后一位数字，即PID-这里是2900。&quot; class=&quot;headerlink&quot; title=&quot;3.查看被占用端口对应的PID，输入命令：netstat -aon|findstr “9010”，回车，记下最后一位数字，即PID,这里是2900。&quot;&gt;&lt;/a&gt;3.查看被占用端口对应的PID，输入命令：netstat -aon|findstr “9010”，回车，记下最后一位数字，即PID,这里是2900。&lt;/h2&gt;&lt;h2 id=&quot;4-继续输入tasklist-findstr-“2900”，回车，查看是哪个进程或者程序占用了2900端口，结果是：lghub-agent-exe&quot;&gt;&lt;a href=&quot;#4-继续输入tasklist-findstr-“2900”，回车，查看是哪个进程或者程序占用了2900端口，结果是：lghub-agent-exe&quot; class=&quot;headerlink&quot; title=&quot;4.继续输入tasklist|findstr “2900”，回车，查看是哪个进程或者程序占用了2900端口，结果是：lghub_agent.exe&quot;&gt;&lt;/a&gt;4.继续输入tasklist|findstr “2900”，回车，查看是哪个进程或者程序占用了2900端口，结果是：lghub_agent.exe&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/2020/05/27/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E8%A2%AB%E8%B0%81%E5%8D%A0%E7%94%A8%EF%BC%8C%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/3.png&quot; alt=&quot;3&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;5-结束该进程：在任务管理器中选中该进程点击”结束进程“按钮，或者是在cmd的命令窗口中输入：taskkill-f-t-im-lghub-agent-exe&quot;&gt;&lt;a href=&quot;#5-结束该进程：在任务管理器中选中该进程点击”结束进程“按钮，或者是在cmd的命令窗口中输入：taskkill-f-t-im-lghub-agent-exe&quot; class=&quot;headerlink&quot; title=&quot;5.结束该进程：在任务管理器中选中该进程点击”结束进程“按钮，或者是在cmd的命令窗口中输入：taskkill /f /t /im lghub_agent.exe&quot;&gt;&lt;/a&gt;5.结束该进程：在任务管理器中选中该进程点击”结束进程“按钮，或者是在cmd的命令窗口中输入：taskkill /f /t /im lghub_agent.exe&lt;/h2&gt;
     
     </summary>
     
@@ -77,10 +111,8 @@
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;图片测试&quot;&gt;&lt;a href=&quot;#图片测试&quot; class=&quot;headerlink&quot; title=&quot;图片测试&quot;&gt;&lt;/a&gt;图片测试&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/2020/04/13/hexo%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87
-      
+      &lt;h2 id=&quot;图片测试&quot;&gt;&lt;a href=&quot;#图片测试&quot; class=&quot;headerlink&quot; title=&quot;图片测试&quot;&gt;&lt;/a&gt;图片测试&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/2020/04/13/hexo%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E5%AF%BC%E5%85%A5/2.png&quot; alt=&quot;代码&quot;&gt;&lt;/p&gt;
+
     
     </summary>
     
@@ -101,12 +133,12 @@
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;第一章&quot;&gt;&lt;a href=&quot;#第一章&quot; class=&quot;headerlink&quot; title=&quot;第一章&quot;&gt;&lt;/a&gt;第一章&lt;/h2&gt;&lt;p&gt;内容&lt;/p&gt;
+      &lt;h2 id=&quot;第一章&quot;&gt;&lt;a href=&quot;#第一章&quot; class=&quot;headerlink&quot; title=&quot;第一章&quot;&gt;&lt;/a&gt;第一章&lt;/h2&gt;&lt;p&gt;内容&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;第二章&quot;&gt;&lt;a href=&quot;#第二章&quot; class=&quot;headerlink&quot; title=&quot;
-      
+&lt;h2 id=&quot;第二章&quot;&gt;&lt;a href=&quot;#第二章&quot; class=&quot;headerlink&quot; title=&quot;第二章&quot;&gt;&lt;/a&gt;第二章&lt;/h2&gt;&lt;p&gt;内容 &lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;参考文献&quot;&gt;&lt;a href=&quot;#参考文献&quot; class=&quot;headerlink&quot; title=&quot;参考文献&quot;&gt;&lt;/a&gt;参考文献&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://www.baidu.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;www.baidu.com&lt;/a&gt;&lt;/p&gt;
+
     
     </summary>
     
@@ -127,10 +159,14 @@
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
