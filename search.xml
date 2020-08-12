@@ -1,340 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>hexo本地图片导入</title>
-    <url>/2020/04/13/hexo%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E5%AF%BC%E5%85%A5/</url>
-    <content><![CDATA[<h2 id="图片测试"><a href="#图片测试" class="headerlink" title="图片测试"></a>图片测试</h2><p><img src="/2020/04/13/hexo%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E5%AF%BC%E5%85%A5/2.png" alt="代码"></p>
-]]></content>
-      <tags>
-        <tag>ceshi</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2020/04/12/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
-      <tags>
-        <tag>default</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何运行vue项目</title>
-    <url>/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/</url>
-    <content><![CDATA[<h1 id="如何运行vue项目"><a href="#如何运行vue项目" class="headerlink" title="如何运行vue项目"></a>如何运行vue项目</h1><p><strong>安装node.js</strong></p>
-<p>从<a href="https://nodejs.org/en/http://" target="_blank" rel="noopener">node.js官网</a>下载并安装node，安装过程很简单，一路“下一步”就可以了（傻瓜式安装）。</p>
-<p>安装完成之后，打开命令行工具，输入 node -v，如下图，如果出现相应的版本号，则说明安装成功。</p>
-<p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/11.jpg" alt="img"></p>
-<p>npm包管理器，是集成在node中的，所以，直接输入 npm -v就会如下图所示，显示出npm的版本信息。</p>
-<p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/12.jpg" alt="img"></p>
-<p>OK！node环境已经安装完成，npm包管理器也有了。由于有些npm有些资源被屏蔽或者是国外资源的原因，经常会导致用npm安装依赖包的时候失败，所有我还需要npm的国内镜像—cnpm。</p>
-<h2 id="安装cnpm"><a href="#安装cnpm" class="headerlink" title="安装cnpm"></a>安装cnpm</h2><p>在命令行中输入 npm install -g cnpm –registry=<a href="http://registry.npm.taobao.org" target="_blank" rel="noopener">http://registry.npm.taobao.org</a> 然后等待，安装完成如下图。</p>
-<p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/13.jpg" alt="img"></p>
-<p>完成之后，我们就可以用cnpm代替npm来安装依赖包了。如果想进一步了解cnpm的，查看<a href="https://npm.taobao.org/http://" target="_blank" rel="noopener">淘宝npm镜像官网</a>。</p>
-<h2 id="安装vue-cli脚手架构建工具"><a href="#安装vue-cli脚手架构建工具" class="headerlink" title="安装vue-cli脚手架构建工具"></a>安装vue-cli脚手架构建工具</h2><p>在命令行中运行命令 cnpm install -g vue-cli ，然后等待安装完成。(注意，这里使用cnpm来替代npm，不然速度超级慢，会导致卡在那)</p>
-<p>通过以上三部，我们需要准备的环境和工具都准备好了，接下来就开始使用vue-cli来构建项目。</p>
-<h2 id="用vue-cli构建项目"><a href="#用vue-cli构建项目" class="headerlink" title="用vue-cli构建项目"></a>用vue-cli构建项目</h2><p>要创建项目，首先我们要选定目录，然后再命令行中把目录转到选定的目录。在这里，我选择桌面来存放新建的项目，则我们需要先把目录cd到桌面，如下图。</p>
-<p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/14.jpg" alt="img"></p>
-<p>在桌面目录下，在命令行中运行命令 vue init webpack firstVue 。解释一下这个命令，这个命令的意思是初始化一个项目，其中webpack是构建工具，也就是整个项目是基于webpack的。其中firstVue是整个项目文件夹的名称，这个文件夹会自动生成在你指定的目录中（我的实例中，会在桌面生成该文件夹），如下图。</p>
-<p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/15.jpg" alt="img"></p>
-<p>运行初始化命令的时候回让用户输入几个基本的选项，如项目名称，描述，作者等信息，如果不想填直接回车默认就好。</p>
-<p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/16.jpg" alt="img"></p>
-<p>打开firstVue文件夹，项目文件如下所示。</p>
-<p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/17.jpg" alt="img"></p>
-<p>这就是整个项目的目录结构，其中，我们主要在src目录中做修改。这个项目现在还只是一个结构框架，整个项目需要的依赖资源都还没有安装，如下图。</p>
-<p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/18.jpg" alt="img"></p>
-<h2 id="安装项目所需的依赖"><a href="#安装项目所需的依赖" class="headerlink" title="安装项目所需的依赖"></a>安装项目所需的依赖</h2><p>要安装依赖包，首先cd到项目文件夹（firstVue文件夹），然后运行命令 cnpm install ，等待安装。</p>
-<p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/19.jpg" alt="img"></p>
-<p>安装完成之后，会在我们的项目目录firstVue文件夹中多出一个node_modules文件夹，这里边就是我们项目需要的依赖包资源。</p>
-<p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/20.jpg" alt="img"></p>
-<p>安装完依赖包之后，就可以运行整个项目了。</p>
-<h2 id="运行项目"><a href="#运行项目" class="headerlink" title="运行项目"></a>运行项目</h2><p>在项目目录中，运行命令 npm run dev ，会用热加载的方式运行我们的应用，热加载可以让我们在修改完代码后不用手动刷新浏览器就能实时看到修改后的效果。</p>
-<p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/21.jpg" alt="img"></p>
-<p>这里简单介绍下 npm run dev 命令，其中的“run”对应的是package.json文件中，scripts字段中的dev，也就是 node build/dev-server.js命令的一个快捷方式。</p>
-<p>项目运行成功后，浏览器会自动打开localhost:8080（如果浏览器没有自动打开，可以手动输入）。运行成功后，会看到如下所示的界面。</p>
-<p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/22.jpg" alt="img"></p>
-<p>如果看到这个页面，说明项目运行成功了。</p>
-]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>常见的服务器状态码（二）</title>
+      <link href="/2020/08/12/%E5%B8%B8%E8%A7%81%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%8A%B6%E6%80%81%E7%A0%81%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
+      <url>/2020/08/12/%E5%B8%B8%E8%A7%81%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%8A%B6%E6%80%81%E7%A0%81%EF%BC%88%E4%BA%8C%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<p>服务器常用的状态码<br>常见HTTP状态码</p><p> <img src="/2020/08/12/%E5%B8%B8%E8%A7%81%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%8A%B6%E6%80%81%E7%A0%81%EF%BC%88%E4%BA%8C%EF%BC%89/1.png" alt="img"></p><p>100 Continue</p><p>初始的请求已经接受，客户应当继续发送请求的其余部分</p><p>101 Switching Protocols</p><p>服务器将遵从客户的请求转换到另外一种协议</p><p>200 OK</p><p>一切正常，对GET和POST请求的应答文档跟在后面</p><p>201 Created</p><p>服务器已经创建了文档，Location头给出了它的URL。</p><p>202 Accepted</p><p>已经接受请求，但处理尚未完成。</p><p>203 Non-Authoritative Information</p><p>文档已经正常地返回，但一些应答头可能不正确，因为使用的是文档的拷贝</p><p>204 No Content</p><p>没有新文档，浏览器应该继续显示原来的文档。如果用户定期地刷新页面，而Servlet可以确定用户文档足够新，这个状态代码是很有用的</p><p>205 Reset Content</p><p>没有新的内容，但浏览器应该重置它所显示的内容。用来强制浏览器清除表单输入内容</p><p>206 Partial Content</p><p>客户发送了一个带有Range头的GET请求，服务器完成了它</p><p>300 Multiple Choices</p><p>客户请求的文档可以在多个位置找到，这些位置已经在返回的文档内列出。如果服务器要提出优先选择，则应该在Location应答头指明。</p><p>301 Moved Permanently</p><p>客户请求的文档在其他地方，新的URL在Location头中给出，浏览器应该自动地访问新的URL。</p><p>302 Found</p><p>类似于301，但新的URL应该被视为临时性的替代，而不是永久性的。</p><p>303 See Other</p><p>类似于301/302，不同之处在于，如果原来的请求是POST，Location头指定的重定向目标文档应该通过GET提取</p><p>304 Not Modified</p><p>客户端有缓冲的文档并发出了一个条件性的请求（一般是提供If-Modified-Since头表示客户只想比指定日期更新的文档）。服务器告诉客户，原来缓冲的文档还可以继续使用。</p><p>305 Use Proxy</p><p>客户请求的文档应该通过Location头所指明的代理服务器提取</p><p>307 Temporary Redirect</p><p>和302（Found）相同。许多浏览器会错误地响应302应答进行重定向，即使原来的请求是 POST，即使它实际上只能在POST请求的应答是303时才能重定向。由于这个原因，HTTP 1.1新增了307，以便更加清除地区分几个状态代码： 当出现303应答时，浏览器可以跟随重定向的GET和POST请求；如果是307应答，则浏览器只能跟随对GET请求的重定向。</p><p>400 Bad Request</p><p>请求出现语法错误。</p><p>401 Unauthorized</p><p>客户试图未经授权访问受密码保护的页面。应答中会包含一个WWW-Authenticate头，浏览器据此显示用户名字/密码对话框，然后在填写合适的Authorization头后再次发出请求。</p><p>403 Forbidden</p><p>资源不可用。没有权限访问资源</p><p>404 Not Found</p><p>无法找到指定位置的资源</p><p>405 Method Not Allowed</p><p>请求方法（GET、POST、HEAD、Delete、PUT、TRACE等）对指定的资源不适用。用来访问本页面的 HTTP 谓词不被允许（方法不被允许） </p><p>406 Not Acceptable</p><p>指定的资源已经找到，但它的MIME类型和客户在Accpet头中所指定的不兼容</p><p>407 Proxy Authentication Required</p><p>类似于401，表示客户必须先经过代理服务器的授权。</p><p>408 Request Timeout</p><p>在服务器许可的等待时间内，客户一直没有发出任何请求。客户可以在以后重复同一请求。</p><p>409 Conflict</p><p>通常和PUT请求有关。由于请求和资源的当前状态相冲突，因此请求不能成功。</p><p>410 Gone</p><p>所请求的文档已经不再可用，而且服务器不知道应该重定向到哪一个地址。它和404的不同在于，返回407表示文档永久地离开了指定的位置，而404表示由于未知的原因文档不可用。</p><p>411 Length Required</p><p>服务器不能处理请求，除非客户发送一个Content-Length头。</p><p>412 Precondition Failed</p><p>请求头中指定的一些前提条件失败</p><p>413 Request Entity Too Large</p><p>目标文档的大小超过服务器当前愿意处理的大小。如果服务器认为自己能够稍后再处理该请求，则应该提供一个Retry-After头</p><p>414 Request URI Too Long</p><p>URI太长</p><p>416 Requested Range Not Satisfiable</p><p>服务器不能满足客户在请求中指定的Range头</p><p>500 Internal Server Error</p><p>服务器遇到了意料不到的情况，不能完成客户的请求</p><p>501 Not Implemented</p><p>服务器不支持实现请求所需要的功能。例如，客户发出了一个服务器不支持的PUT请求</p><p>502 Bad Gateway</p><p>服务器作为网关或者代理时，为了完成请求访问下一个服务器，但该服务器返回了非法的应答</p><p>503 Service Unavailable</p><p>服务器由于维护或者负载过重未能应答。例如，Servlet可能在数据库连接池已满的情况下返回503。服务器返回503时可以提供一个Retry-After头</p><p>504 Gateway Timeout</p><p>由作为代理或网关的服务器使用，表示不能及时地从远程服务器获得应答</p><p>505 HTTP Version Not Supported</p><p>服务器不支持请求中所指明的HTTP版本</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> web前端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>常见的服务器状态码（一）</title>
+      <link href="/2020/08/12/%E5%B8%B8%E8%A7%81%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%8A%B6%E6%80%81%E7%A0%81%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+      <url>/2020/08/12/%E5%B8%B8%E8%A7%81%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%8A%B6%E6%80%81%E7%A0%81%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<p>如果向您的服务器发出了某项请求要求显示您网站上的某个网页，那么，您的服务器会返回 HTTP 状态代码以响应该请求。<br>一些常见的状态代码为：<br>200 - 服务器成功返回网页<br>404 - 请求的网页不存在<br>503 - 服务器暂时不可用<br>以下提供了 HTTP 状态代码的完整列表。点击链接可了解详细信息。您也可以访问有关 HTTP 状态代码的 W3C 页来了解详细信息。<br>1xx（临时响应）<br>用于表示临时响应并需要请求者执行操作才能继续的状态代码。<br>代码 说明<br>100（继续） 请求者应当继续提出请求。服务器返回此代码则意味着，服务器已收到了请求的第一部分，现正在等待接收其余部分。<br>101（切换协议） 请求者已要求服务器切换协议，服务器已确认并准备进行切换。<br>2xx（成功）<br>用于表示服务器已成功处理了请求的状态代码。<br>代码 说明<br>200（成功） 服务器已成功处理了请求。通常，这表示服务器提供了请求的网页。如果您的 robots.txt 文件显示为此状态，那么，这表示 Googlebot 已成功检索到该文件。<br>201（已创建） 请求成功且服务器已创建了新的资源。<br>202（已接受） 服务器已接受了请求，但尚未对其进行处理。<br>203（非授权信息） 服务器已成功处理了请求，但返回了可能来自另一来源的信息。<br>204（无内容） 服务器成功处理了请求，但未返回任何内容。<br>205（重置内容） 服务器成功处理了请求，但未返回任何内容。与 204 响应不同，此响应要求请求者重置文档视图（例如清除表单内容以输入新内容）。<br>206（部分内容） 服务器成功处理了部分 GET 请求。<br>3xx（已重定向）<br>要完成请求，您需要进一步进行操作。通常，这些状态代码是永远重定向的。Google 建议您在每次请求时使用的重定向要少于 5 个。您可以使用网站管理员工具来查看 Googlebot 在抓取您已重定向的网页时是否会遇到问题。诊断下的抓取错误页中列出了 Googlebot 由于重定向错误而无法抓取的网址。<br>代码 说明<br>300（多种选择） 服务器根据请求可执行多种操作。服务器可根据请求者 (User agent) 来选择一项操作，或提供操作列表供请求者选择。<br>301（永久移动） 请求的网页已被永久移动到新位置。服务器返回此响应（作为对 GET 或 HEAD 请求的响应）时，会自动将请求者转到新位置。您应使用此代码通知 Googlebot 某个网页或网站已被永久移动到新位置。<br>302（临时移动） 服务器目前正从不同位置的网页响应请求，但请求者应继续使用原有位置来进行以后的请求。此代码与响应 GET 和 HEAD 请求的 301 代码类似，会自动将请求者转到不同的位置。但由于 Googlebot 会继续抓取原有位置并将其编入索引，因此您不应使用此代码来通知 Googlebot 某个页面或网站已被移动。<br>303（查看其他位置） 当请求者应对不同的位置进行单独的 GET 请求以检索响应时，服务器会返回此代码。对于除 HEAD 请求之外的所有请求，服务器会自动转到其他位置。<br>304（未修改） 自从上次请求后，请求的网页未被修改过。服务器返回此响应时，不会返回网页内容。<br>如果网页自请求者上次请求后再也没有更改过，您应当将服务器配置为返回此响应（称为 If-Modified-Since HTTP 标头）。由于服务器可以告诉 Googlebot 自从上次抓取后网页没有更改过，因此可节省带宽和开销<br>。<br>305（使用代理） 请求者只能使用代理访问请求的网页。如果服务器返回此响应，那么，服务器还会指明请求者应当使用的代理。<br>307（临时重定向） 服务器目前正从不同位置的网页响应请求，但请求者应继续使用原有位置来进行以后的请求。此代码与响应 GET 和 HEAD 请求的 301 代码类似，会自动将请求者转到不同的位置。但由于 Googlebot 会继续抓取原有位置并将其编入索引，因此您不应使用此代码来通知 Googlebot 某个页面或网站已被移动。<br>4xx（请求错误）<br>这些状态代码表示，请求可能出错，已妨碍了服务器对请求的处理。<br>代码 说明<br>400（错误请求） 服务器不理解请求的语法。<br>401（未授权） 请求要求进行身份验证。登录后，服务器可能会返回对页面的此响应。<br>403（已禁止） 服务器拒绝请求。如果在 Googlebot 尝试抓取您网站上的有效网页时显示此状态代码（您可在 Google 网站管理员工具中诊 断下的网络抓取页面上看到此状态代码），那么，这可能是您的服务器或主机拒绝 Googlebot 对其进行访问。<br>404（未找到） 服务器找不到请求的网页。例如，如果请求是针对服务器上不存在的网页进行的，那么，服务器通常会返回此代码。<br>如果您的网站上没有 robots.txt 文件，而您在 Google 网站管理员工具” 诊断”标签的 robots.txt 页上发现此状态，那么，这是正确的状态。然而，如果您有 robots.txt 文件而又发现了此状态，那么，这说明您的 robots.txt 文件可能是命名错误或位于错误的位置。（该文件应当位于顶级域名上，且应当名为 robots.txt）。<br>如果您在 Googlebot 尝试抓取的网址上发现此状态（位于”诊断”标签的 HTTP 错误页上），那么，这表示 Googlebot 所追踪的可能是另一网页中的无效链接（旧链接或输入有误的链接）。</p><p>405（方法禁用） 禁用请求中所指定的方法。<br>406（不接受） 无法使用请求的内容特性来响应请求的网页。<br>407（需要代理授权） 此状态代码与 401（未授权）类似，但却指定了请求者应当使用代理进行授权。如果服务器返回此响应，那么，服务器还会指明请求者应当使用的代理。<br>408（请求超时） 服务器等候请求时超时。<br>409（冲突） 服务器在完成请求时发生冲突。服务器必须包含有关响应中所发生的冲突的信息。服务器在响应与前一个请求相冲突的 PUT 请求时可能会返回此代码，同时会提供两个请求的差异列表。<br>410（已删除） 如果请求的资源已被永久删除，那么，服务器会返回此响应。该代码与 404（未找到）代码类似，但在资源以前有但现在已经不复存在的情况下，有时会替代 404 代码出现。如果资源已被永久删除，那么，您应当使用 301 代码指定该资源的新位置。<br>411（需要有效长度） 服务器不会接受包含无效内容长度标头字段的请求。<br>412（未满足前提条件） 服务器未满足请求者在请求中设置的其中一个前提条件。<br>413（请求实体过大） 服务器无法处理请求，因为请求实体过大，已超出服务器的处理能力。<br>414（请求的 URI 过长） 请求的 URI（通常为网址）过长，服务器无法进行处理。<br>415（不支持的媒体类型） 请求的格式不受请求页面的支持。<br>416（请求范围不符合要求） 如果请求是针对网页的无效范围进行的，那么，服务器会返回此状态代码。<br>417（未满足期望值） 服务器未满足”期望”请求标头字段的要求。<br>5xx（服务器错误）<br>这些状态代码表示，服务器在尝试处理请求时发生内部错误。这些错误可能是服务器本身的错误，而不是请求出错。<br>代码 说明<br>500（服务器内部错误） 服务器遇到错误，无法完成请求。<br>501（尚未实施） 服务器不具备完成请求的功能。例如，当服务器无法识别请求方法时，服务器可能会返回此代码。<br>502（错误网关） 服务器作为网关或代理，从上游服务器收到了无效的响应。<br>503（服务不可用） 目前无法使用服务器（由于超载或进行停机维护）。通常，这只是一种暂时的状态。<br>504（网关超时） 服务器作为网关或代理，未及时从上游服务器接收请求。<br>505（HTTP 版本不受支持）</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> web前端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>get post请求的区别</title>
+      <link href="/2020/08/12/get-post%E8%AF%B7%E6%B1%82%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+      <url>/2020/08/12/get-post%E8%AF%B7%E6%B1%82%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+      
+        <content type="html"><![CDATA[<p>一、概述<br>http请求方式有get、post、put、delete等多种，最常用的就是get和post</p><p> <img src="/2020/08/12/get-post%E8%AF%B7%E6%B1%82%E7%9A%84%E5%8C%BA%E5%88%AB/1.png" alt="img"></p><p>多种请求方式<br>二、区别：<br>1、GET请求一般用去请求获取数据，</p><pre><code>POST一般作为发送数据到后台时使用</code></pre><p>2、GET请求也可传参到后台，但是其参数在浏览器的地址栏的url中可见，所以隐私性安全性较差，且参数长度也是有限制的</p><pre><code>POST请求传递参数放在Request body中，不会在url中显示，比GET要安全，且参数长度无限制</code></pre><p>3、GET请求刷新浏览器或回退时没有影响</p><pre><code>POST回退时会重新提交数据请求</code></pre><p>4、GET 请求可被缓存</p><pre><code>POST 请求不会被缓存</code></pre><p>5、GET 请求保留在浏览器历史记录中</p><pre><code>POST 请求不会保留在浏览器历史记录中</code></pre><p>6、GET 请求可被收藏为书签</p><pre><code>POST 不能被收藏为书签</code></pre><p>7、GET请求只能进行url编码（application/x-www-form-urlencoded）</p><pre><code>POST支持多种编码方式（application/x-www-form-urlencoded 或 multipart/form-data。为二进制数据使用多重编码。）</code></pre><p>8、GET请求比较常见的方式是通过url地址栏请求</p><pre><code>POST最常见是通过form表单发送数据请求</code></pre><p>三、进一步理解<br>个人查了一些资料后的理解：</p><p>post请求和get请求都是HTTP的请求方式，本质上来说并无区别，底层实现都是基于TCP/IP协议。</p><p>但是请求有各种各样的方式，于是HTTP对请求方式进行了划分和规定，于是产生了get、post处理请求的分工和区别。</p><p>此外还有搜索到另外一个区别：GET产生一个TCP数据包；POST产生两个TCP数据包。</p><p>对于GET方式的请求，浏览器会把http header和data一并发送出去，服务器响应200（返回数据）；</p><p>而对于POST，浏览器先发送header，服务器响应100 continue，浏览器再发送data，服务器响应200 ok（返回数据）。</p><ol><li><p>GET与POST都有自己的语义，不能随便混用。</p></li><li><p>据研究，在网络环境好的情况下，发一次包的时间和发两次包的时间差别基本可以无视。而在网络环境差的情况下，两次包的TCP在验证数据包完整性上，有非常大的优点。</p></li><li><p>并不是所有浏览器都会在POST中发送两次包，Firefox就只发送一次。</p></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> web前端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何运行vue项目</title>
+      <link href="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/"/>
+      <url>/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/</url>
+      
+        <content type="html"><![CDATA[<h1 id="如何运行vue项目"><a href="#如何运行vue项目" class="headerlink" title="如何运行vue项目"></a>如何运行vue项目</h1><p><strong>安装node.js</strong></p><p>从<a href="https://nodejs.org/en/http://" target="_blank" rel="noopener">node.js官网</a>下载并安装node，安装过程很简单，一路“下一步”就可以了（傻瓜式安装）。</p><p>安装完成之后，打开命令行工具，输入 node -v，如下图，如果出现相应的版本号，则说明安装成功。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/11.jpg" alt="img"></p><p>npm包管理器，是集成在node中的，所以，直接输入 npm -v就会如下图所示，显示出npm的版本信息。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/12.jpg" alt="img"></p><p>OK！node环境已经安装完成，npm包管理器也有了。由于有些npm有些资源被屏蔽或者是国外资源的原因，经常会导致用npm安装依赖包的时候失败，所有我还需要npm的国内镜像—cnpm。</p><h2 id="安装cnpm"><a href="#安装cnpm" class="headerlink" title="安装cnpm"></a>安装cnpm</h2><p>在命令行中输入 npm install -g cnpm –registry=<a href="http://registry.npm.taobao.org" target="_blank" rel="noopener">http://registry.npm.taobao.org</a> 然后等待，安装完成如下图。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/13.jpg" alt="img"></p><p>完成之后，我们就可以用cnpm代替npm来安装依赖包了。如果想进一步了解cnpm的，查看<a href="https://npm.taobao.org/http://" target="_blank" rel="noopener">淘宝npm镜像官网</a>。</p><h2 id="安装vue-cli脚手架构建工具"><a href="#安装vue-cli脚手架构建工具" class="headerlink" title="安装vue-cli脚手架构建工具"></a>安装vue-cli脚手架构建工具</h2><p>在命令行中运行命令 cnpm install -g vue-cli ，然后等待安装完成。(注意，这里使用cnpm来替代npm，不然速度超级慢，会导致卡在那)</p><p>通过以上三部，我们需要准备的环境和工具都准备好了，接下来就开始使用vue-cli来构建项目。</p><h2 id="用vue-cli构建项目"><a href="#用vue-cli构建项目" class="headerlink" title="用vue-cli构建项目"></a>用vue-cli构建项目</h2><p>要创建项目，首先我们要选定目录，然后再命令行中把目录转到选定的目录。在这里，我选择桌面来存放新建的项目，则我们需要先把目录cd到桌面，如下图。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/14.jpg" alt="img"></p><p>在桌面目录下，在命令行中运行命令 vue init webpack firstVue 。解释一下这个命令，这个命令的意思是初始化一个项目，其中webpack是构建工具，也就是整个项目是基于webpack的。其中firstVue是整个项目文件夹的名称，这个文件夹会自动生成在你指定的目录中（我的实例中，会在桌面生成该文件夹），如下图。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/15.jpg" alt="img"></p><p>运行初始化命令的时候回让用户输入几个基本的选项，如项目名称，描述，作者等信息，如果不想填直接回车默认就好。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/16.jpg" alt="img"></p><p>打开firstVue文件夹，项目文件如下所示。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/17.jpg" alt="img"></p><p>这就是整个项目的目录结构，其中，我们主要在src目录中做修改。这个项目现在还只是一个结构框架，整个项目需要的依赖资源都还没有安装，如下图。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/18.jpg" alt="img"></p><h2 id="安装项目所需的依赖"><a href="#安装项目所需的依赖" class="headerlink" title="安装项目所需的依赖"></a>安装项目所需的依赖</h2><p>要安装依赖包，首先cd到项目文件夹（firstVue文件夹），然后运行命令 cnpm install ，等待安装。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/19.jpg" alt="img"></p><p>安装完成之后，会在我们的项目目录firstVue文件夹中多出一个node_modules文件夹，这里边就是我们项目需要的依赖包资源。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/20.jpg" alt="img"></p><p>安装完依赖包之后，就可以运行整个项目了。</p><h2 id="运行项目"><a href="#运行项目" class="headerlink" title="运行项目"></a>运行项目</h2><p>在项目目录中，运行命令 npm run dev ，会用热加载的方式运行我们的应用，热加载可以让我们在修改完代码后不用手动刷新浏览器就能实时看到修改后的效果。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/21.jpg" alt="img"></p><p>这里简单介绍下 npm run dev 命令，其中的“run”对应的是package.json文件中，scripts字段中的dev，也就是 node build/dev-server.js命令的一个快捷方式。</p><p>项目运行成功后，浏览器会自动打开localhost:8080（如果浏览器没有自动打开，可以手动输入）。运行成功后，会看到如下所示的界面。</p><p><img src="/2020/05/31/%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8Cvue%E9%A1%B9%E7%9B%AE/22.jpg" alt="img"></p><p>如果看到这个页面，说明项目运行成功了。</p>]]></content>
+      
+      
       <categories>
-        <category>vue</category>
+          
+          <category> vue </category>
+          
       </categories>
-      <tags>
-        <tag>vue</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何查看某个端口被谁占用，结束进程</title>
-    <url>/2020/05/27/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E8%A2%AB%E8%B0%81%E5%8D%A0%E7%94%A8%EF%BC%8C%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/</url>
-    <content><![CDATA[<h1 id="如何查看某个端口被谁占用，结束进程"><a href="#如何查看某个端口被谁占用，结束进程" class="headerlink" title="如何查看某个端口被谁占用，结束进程"></a>如何查看某个端口被谁占用，结束进程</h1><h2 id="1-开始—-gt-运行—-gt-cmd，或者是window-R组合键，调出命令窗口"><a href="#1-开始—-gt-运行—-gt-cmd，或者是window-R组合键，调出命令窗口" class="headerlink" title="1.开始—-&gt;运行—-&gt;cmd，或者是window+R组合键，调出命令窗口"></a>1.开始—-&gt;运行—-&gt;cmd，或者是window+R组合键，调出命令窗口</h2><p><img src="/2020/05/27/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E8%A2%AB%E8%B0%81%E5%8D%A0%E7%94%A8%EF%BC%8C%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/1.png" alt="1"></p>
-<h2 id="2-输入命令：netstat-ano，列出所有端口的情况。在列表中我们观察被占用的端口，比如是9010，首先找到它。"><a href="#2-输入命令：netstat-ano，列出所有端口的情况。在列表中我们观察被占用的端口，比如是9010，首先找到它。" class="headerlink" title="2.输入命令：netstat -ano，列出所有端口的情况。在列表中我们观察被占用的端口，比如是9010，首先找到它。"></a>2.输入命令：netstat -ano，列出所有端口的情况。在列表中我们观察被占用的端口，比如是9010，首先找到它。</h2><p><img src="/2020/05/27/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E8%A2%AB%E8%B0%81%E5%8D%A0%E7%94%A8%EF%BC%8C%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/4.png" alt="2"></p>
-<h2 id="3-查看被占用端口对应的PID，输入命令：netstat-aon-findstr-“9010”，回车，记下最后一位数字，即PID-这里是2900。"><a href="#3-查看被占用端口对应的PID，输入命令：netstat-aon-findstr-“9010”，回车，记下最后一位数字，即PID-这里是2900。" class="headerlink" title="3.查看被占用端口对应的PID，输入命令：netstat -aon|findstr “9010”，回车，记下最后一位数字，即PID,这里是2900。"></a>3.查看被占用端口对应的PID，输入命令：netstat -aon|findstr “9010”，回车，记下最后一位数字，即PID,这里是2900。</h2><h2 id="4-继续输入tasklist-findstr-“2900”，回车，查看是哪个进程或者程序占用了2900端口，结果是：lghub-agent-exe"><a href="#4-继续输入tasklist-findstr-“2900”，回车，查看是哪个进程或者程序占用了2900端口，结果是：lghub-agent-exe" class="headerlink" title="4.继续输入tasklist|findstr “2900”，回车，查看是哪个进程或者程序占用了2900端口，结果是：lghub_agent.exe"></a>4.继续输入tasklist|findstr “2900”，回车，查看是哪个进程或者程序占用了2900端口，结果是：lghub_agent.exe</h2><p><img src="/2020/05/27/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E8%A2%AB%E8%B0%81%E5%8D%A0%E7%94%A8%EF%BC%8C%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/3.png" alt="3"></p>
-<h2 id="5-结束该进程：在任务管理器中选中该进程点击”结束进程“按钮，或者是在cmd的命令窗口中输入：taskkill-f-t-im-lghub-agent-exe"><a href="#5-结束该进程：在任务管理器中选中该进程点击”结束进程“按钮，或者是在cmd的命令窗口中输入：taskkill-f-t-im-lghub-agent-exe" class="headerlink" title="5.结束该进程：在任务管理器中选中该进程点击”结束进程“按钮，或者是在cmd的命令窗口中输入：taskkill /f /t /im lghub_agent.exe"></a>5.结束该进程：在任务管理器中选中该进程点击”结束进程“按钮，或者是在cmd的命令窗口中输入：taskkill /f /t /im lghub_agent.exe</h2>]]></content>
-      <tags>
-        <tag>ceshi</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>nodeJS、npm的安装和配置</title>
-    <url>/2020/05/30/nodeJS%E3%80%81npm%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="nodeJS、npm的安装和配置"><a href="#nodeJS、npm的安装和配置" class="headerlink" title="nodeJS、npm的安装和配置"></a>nodeJS、npm的安装和配置</h1><h3 id="一、理清关系"><a href="#一、理清关系" class="headerlink" title="一、理清关系"></a>一、理清关系</h3><p>首先是自己遇到的几个问题：</p>
-<p>前提是我现在下载了一个VUE相关的代码，想运行起来，然后查了各种相关的东西，需要什么npm webpack node。。。总之有点混乱，于是先整理了几个问题，如下：</p>
-<p>1、webpack和node的关系是什么？</p>
-<p>2、如果我只想用npm，不想安装node，可以吗？</p>
-<p>3、vue和webpack npm的关系又是什么？</p>
-<p>依赖于这三个问题，来理清一下这三者的最终关系。</p>
-<p>（1）vue.js是前端的一个框架，写出来的都是一个个vue文件，这些文件是浏览器不识别的文件，所以需要以来一种工具把vue文件转换为浏览器可识别的文件。</p>
-<p>（2）OK，webpack就是这个工具，它可以将这些文件进行打包，完成这个功能。</p>
-<p>（3）webpack打包需要依赖npm，而npm是依赖于Node.js环境的。</p>
-<p>所以，总结下来就是：webpack依赖node.js环境，将vue文件打包为浏览器可以直接识别的文件，在浏览器里面运行。</p>
-<h3 id="二、nodeJs、npm的安装和配置"><a href="#二、nodeJs、npm的安装和配置" class="headerlink" title="二、nodeJs、npm的安装和配置"></a>二、nodeJs、npm的安装和配置</h3><p>下面的内容是参考此链接：<a href="https://jingyan.baidu.com/article/48b37f8dd141a646488bc.html" target="_blank" rel="noopener">https://jingyan.baidu.com/article/48b37f8dd141a646488bc.html</a></p>
-<p>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。 Node.js 的使用包管理器 npm来管理所有模块的安装、配置、删除等操作，使用起来非常方便，但是想要配置好npm的使用环境还是稍微有点复杂，下面跟着我一起来学习在windows系统上配置NodeJS和NPM吧。 </p>
-<h2 id="安装NodeJS和NPM"><a href="#安装NodeJS和NPM" class="headerlink" title="安装NodeJS和NPM"></a>安装NodeJS和NPM</h2><ol>
-<li><p>1</p>
-<p>打开NodeJS的官网，默认的情况主页就提供了Windows版本的下载链接，我们下载8.12.0 LTS版，LTS代表长期支持版本，一般新手建议使用这个版本，因为这个版本使用的人最多，出问题能找到解决方案的概率较大。如下图所示：</p>
-<p><img src="/2020/05/30/nodeJS%E3%80%81npm%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/1.png" alt="img"></p>
-</li>
-<li><p>2</p>
-<p>下载完成后双击下载好的node-v8.12.0-x64文件开始安装，点击next进入下一步，勾选同意协议，继续下一步。然后选择安装的位置，默认是在C盘，改成D盘安装，这是个好习惯，建议保持。然后进入模块配置步骤。</p>
-<p>一路next</p>
-</li>
-<li><p>3</p>
-<p>这一步是选择安装哪些模块，默认是全部安装，对于新手来说建议全部安装。点开那个add path选项前面的+号，我们看到，会主动把NodeJS和NPM这两个模块的命令路径添加到系统路径里，对于我们来说就非常方便了。点击next继续下一步，然后确认信息，点击Install开始安装，然后程序就开始复制文件等一系列步骤。一直到安装完毕。4</p>
-</li>
-<li><p>4</p>
-<p>安装完毕后点击finish结束安装进程，然后在开始搜索栏输入nodejs，点运行。输入cmd后敲回车，在打开的命令行界面，依次输入命令：</p>
-<p>node -v</p>
-<p>npm -v</p>
-<p>如果正确输出版本号，说明我们的NodeJS和NPM就安装好了，如下图所示：</p>
-<p><img src="/2020/05/30/nodeJS%E3%80%81npm%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/2.png" alt="img"></p>
-<p>END</p>
-</li>
-</ol>
-<h2 id="配置NodeJS和NPM"><a href="#配置NodeJS和NPM" class="headerlink" title="配置NodeJS和NPM"></a>配置NodeJS和NPM</h2><ol>
-<li><p>1</p>
-<p>并不是说NodeJS和NPM安装好了以后就能直接使用了，这也是新手经常犯的一个错误之一。因为默认情况下，NPM安装的模块并不会安装到NodeJS的程序目录，比如上面安装的时候我们设置的D:\Program Files\nodejs\目录。</p>
-</li>
-<li><p>3</p>
-<p>这里我们要分两步，第一步修改NPM的缓存目录和全局目录路径，将对应的模块目录改到D盘nodejs的安装目录，第二步是配置npm和nodejs的环境变量，这样nodejs才能正确地调用对应的模块。</p>
-<p>我们先来做第一步，在D盘nodejs目录下创建两个目录，分别是node_cache和node_global，这是用来放安装过程的缓存文件以及最终的模块配置位置。配置完成后，执行下面这两个命令：</p>
-<p>npm config set prefix “D:\Program Files\nodejs\node_global”</p>
-<p>npm config set cache “D:\Program Files\nodejs\node_cache”</p>
-<p>将npm的全局模块目录和缓存目录配置到我们刚才创建的那两个目录：</p>
-</li>
-<li><p>4</p>
-<p>然后我们打开cmd命令行界面，在使用命令安装cluster模块，命令如下：</p>
-<p>npm install cluster -g</p>
-<p>然后打开刚才创建的node_global目录，可以看到此时cluster目录就安装到这个目录底下了。</p>
-<p><img src="/2020/05/30/nodeJS%E3%80%81npm%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/3.png" alt="img"></p>
-</li>
-</ol>
-<ol start="4">
-<li><p>5</p>
-<p>然后我们来配置npm的环境变量和nodejs的环境变量。在计算机图标上点右键，选属性，然后点击高级系统配置，弹出来的新窗口右下角有个环境路径，点击去，就能看到环境路径的配置界面，我们点击新建。(注意：该处是新建用户变量，而不是系统变量)  然后在弹出来的窗口里，变量名填：NODE_PATH</p>
-<p>变量值填：D:\Program Files\nodejs\node_modules\</p>
-<p>填写好后点确定，然后就能看到我们配置好的NPM环境路径。</p>
-<p><img src="/2020/05/30/nodeJS%E3%80%81npm%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/4.png" alt="img"></p>
-</li>
-<li><p>6</p>
-<p>此时还需要修改一些nodejs默认的模块调用路径，因为模块的安装位置变了，如果nodejs的命令还到原来的位置去找，肯定是找不到安装的模块了。我们在环境变量窗口，选择Path，然后点击右下角的编辑，然后选择npm那个。点击右边的编辑，将其修改为：D:\program\node\node_global\</p>
-<p>然后点确定，保存这个配置。</p>
-</li>
-<li><p>7</p>
-<p>这个时候所有的配置工作才算完成了，然后打开一个新的cmd窗口。先输入命令：</p>
-<p>node</p>
-<p>进入nodejs的交互式命令控制台，然后输入：</p>
-<p>require(‘cluster’)</p>
-<p>如果能正常输出cluster模块的信息，说明上面的所有配置就算生效了。</p>
-<p><img src="/2020/05/30/nodeJS%E3%80%81npm%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/5.png" alt="img"></p>
-</li>
-<li><p>8</p>
-<p>我们还需要做的最后一个工作是，将npm的模块下载仓库从默认的国外站点改为国内的站点，这样下载模块的速度才能比较快，只需要一个命令即可，命令是：</p>
-<p>npm –registry <a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a> install cluster</p>
-<p>上面的命令是临时使用国内一家npm源的地址来安装cluster模块。从下面图中可以看到，速度非常快。只用了不到0.8秒。而我们上面第一次安装的时候用了差不多3秒多，速度快了3倍多。</p>
-<p> <img src="/2020/05/30/nodeJS%E3%80%81npm%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/6.png" alt="img"></p>
-<p>如果想一直使用这个源的地址，那么可以使用下面这个命令来配置。</p>
-<p>npm install -g cnpm –registry=registry_url</p>
-<p>registry_url指的是国内提供的一些npm仓库地址，常用的有：</p>
-<p><a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></p>
-<p><a href="http://r.cnpmjs.org/" target="_blank" rel="noopener">http://r.cnpmjs.org/</a></p>
-<p>这两个都可以使用。如下面第二张图所示，配置好国内源后，安装一个较大的模块express，只用了不到6秒多一点，速度提升还是非常可观的。至此，nodejs和npm在windows上的配置就全部完毕。</p>
-<p>如何运行vue项目：</p>
-<p>参考：<a href="https://www.cnblogs.com/pengjunhao/p/6762141.html" target="_blank" rel="noopener">https://www.cnblogs.com/pengjunhao/p/6762141.html</a></p>
-</li>
-</ol>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>nodeJS、npm的安装和配置</title>
+      <link href="/2020/05/30/nodeJS%E3%80%81npm%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/"/>
+      <url>/2020/05/30/nodeJS%E3%80%81npm%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h1 id="nodeJS、npm的安装和配置"><a href="#nodeJS、npm的安装和配置" class="headerlink" title="nodeJS、npm的安装和配置"></a>nodeJS、npm的安装和配置</h1><h3 id="一、理清关系"><a href="#一、理清关系" class="headerlink" title="一、理清关系"></a>一、理清关系</h3><p>首先是自己遇到的几个问题：</p><p>前提是我现在下载了一个VUE相关的代码，想运行起来，然后查了各种相关的东西，需要什么npm webpack node。。。总之有点混乱，于是先整理了几个问题，如下：</p><p>1、webpack和node的关系是什么？</p><p>2、如果我只想用npm，不想安装node，可以吗？</p><p>3、vue和webpack npm的关系又是什么？</p><p>依赖于这三个问题，来理清一下这三者的最终关系。</p><p>（1）vue.js是前端的一个框架，写出来的都是一个个vue文件，这些文件是浏览器不识别的文件，所以需要以来一种工具把vue文件转换为浏览器可识别的文件。</p><p>（2）OK，webpack就是这个工具，它可以将这些文件进行打包，完成这个功能。</p><p>（3）webpack打包需要依赖npm，而npm是依赖于Node.js环境的。</p><p>所以，总结下来就是：webpack依赖node.js环境，将vue文件打包为浏览器可以直接识别的文件，在浏览器里面运行。</p><h3 id="二、nodeJs、npm的安装和配置"><a href="#二、nodeJs、npm的安装和配置" class="headerlink" title="二、nodeJs、npm的安装和配置"></a>二、nodeJs、npm的安装和配置</h3><p>下面的内容是参考此链接：<a href="https://jingyan.baidu.com/article/48b37f8dd141a646488bc.html" target="_blank" rel="noopener">https://jingyan.baidu.com/article/48b37f8dd141a646488bc.html</a></p><p>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。 Node.js 的使用包管理器 npm来管理所有模块的安装、配置、删除等操作，使用起来非常方便，但是想要配置好npm的使用环境还是稍微有点复杂，下面跟着我一起来学习在windows系统上配置NodeJS和NPM吧。 </p><h2 id="安装NodeJS和NPM"><a href="#安装NodeJS和NPM" class="headerlink" title="安装NodeJS和NPM"></a>安装NodeJS和NPM</h2><ol><li><p>1</p><p>打开NodeJS的官网，默认的情况主页就提供了Windows版本的下载链接，我们下载8.12.0 LTS版，LTS代表长期支持版本，一般新手建议使用这个版本，因为这个版本使用的人最多，出问题能找到解决方案的概率较大。如下图所示：</p><p><img src="/2020/05/30/nodeJS%E3%80%81npm%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/1.png" alt="img"></p></li><li><p>2</p><p>下载完成后双击下载好的node-v8.12.0-x64文件开始安装，点击next进入下一步，勾选同意协议，继续下一步。然后选择安装的位置，默认是在C盘，改成D盘安装，这是个好习惯，建议保持。然后进入模块配置步骤。</p><p>一路next</p></li><li><p>3</p><p>这一步是选择安装哪些模块，默认是全部安装，对于新手来说建议全部安装。点开那个add path选项前面的+号，我们看到，会主动把NodeJS和NPM这两个模块的命令路径添加到系统路径里，对于我们来说就非常方便了。点击next继续下一步，然后确认信息，点击Install开始安装，然后程序就开始复制文件等一系列步骤。一直到安装完毕。4</p></li><li><p>4</p><p>安装完毕后点击finish结束安装进程，然后在开始搜索栏输入nodejs，点运行。输入cmd后敲回车，在打开的命令行界面，依次输入命令：</p><p>node -v</p><p>npm -v</p><p>如果正确输出版本号，说明我们的NodeJS和NPM就安装好了，如下图所示：</p><p><img src="/2020/05/30/nodeJS%E3%80%81npm%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/2.png" alt="img"></p><p>END</p></li></ol><h2 id="配置NodeJS和NPM"><a href="#配置NodeJS和NPM" class="headerlink" title="配置NodeJS和NPM"></a>配置NodeJS和NPM</h2><ol><li><p>1</p><p>并不是说NodeJS和NPM安装好了以后就能直接使用了，这也是新手经常犯的一个错误之一。因为默认情况下，NPM安装的模块并不会安装到NodeJS的程序目录，比如上面安装的时候我们设置的D:\Program Files\nodejs\目录。</p></li><li><p>3</p><p>这里我们要分两步，第一步修改NPM的缓存目录和全局目录路径，将对应的模块目录改到D盘nodejs的安装目录，第二步是配置npm和nodejs的环境变量，这样nodejs才能正确地调用对应的模块。</p><p>我们先来做第一步，在D盘nodejs目录下创建两个目录，分别是node_cache和node_global，这是用来放安装过程的缓存文件以及最终的模块配置位置。配置完成后，执行下面这两个命令：</p><p>npm config set prefix “D:\Program Files\nodejs\node_global”</p><p>npm config set cache “D:\Program Files\nodejs\node_cache”</p><p>将npm的全局模块目录和缓存目录配置到我们刚才创建的那两个目录：</p></li><li><p>4</p><p>然后我们打开cmd命令行界面，在使用命令安装cluster模块，命令如下：</p><p>npm install cluster -g</p><p>然后打开刚才创建的node_global目录，可以看到此时cluster目录就安装到这个目录底下了。</p><p><img src="/2020/05/30/nodeJS%E3%80%81npm%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/3.png" alt="img"></p></li></ol><ol start="4"><li><p>5</p><p>然后我们来配置npm的环境变量和nodejs的环境变量。在计算机图标上点右键，选属性，然后点击高级系统配置，弹出来的新窗口右下角有个环境路径，点击去，就能看到环境路径的配置界面，我们点击新建。(注意：该处是新建用户变量，而不是系统变量)  然后在弹出来的窗口里，变量名填：NODE_PATH</p><p>变量值填：D:\Program Files\nodejs\node_modules\</p><p>填写好后点确定，然后就能看到我们配置好的NPM环境路径。</p><p><img src="/2020/05/30/nodeJS%E3%80%81npm%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/4.png" alt="img"></p></li><li><p>6</p><p>此时还需要修改一些nodejs默认的模块调用路径，因为模块的安装位置变了，如果nodejs的命令还到原来的位置去找，肯定是找不到安装的模块了。我们在环境变量窗口，选择Path，然后点击右下角的编辑，然后选择npm那个。点击右边的编辑，将其修改为：D:\program\node\node_global\</p><p>然后点确定，保存这个配置。</p></li><li><p>7</p><p>这个时候所有的配置工作才算完成了，然后打开一个新的cmd窗口。先输入命令：</p><p>node</p><p>进入nodejs的交互式命令控制台，然后输入：</p><p>require(‘cluster’)</p><p>如果能正常输出cluster模块的信息，说明上面的所有配置就算生效了。</p><p><img src="/2020/05/30/nodeJS%E3%80%81npm%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/5.png" alt="img"></p></li><li><p>8</p><p>我们还需要做的最后一个工作是，将npm的模块下载仓库从默认的国外站点改为国内的站点，这样下载模块的速度才能比较快，只需要一个命令即可，命令是：</p><p>npm –registry <a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a> install cluster</p><p>上面的命令是临时使用国内一家npm源的地址来安装cluster模块。从下面图中可以看到，速度非常快。只用了不到0.8秒。而我们上面第一次安装的时候用了差不多3秒多，速度快了3倍多。</p><p> <img src="/2020/05/30/nodeJS%E3%80%81npm%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/6.png" alt="img"></p><p>如果想一直使用这个源的地址，那么可以使用下面这个命令来配置。</p><p>npm install -g cnpm –registry=registry_url</p><p>registry_url指的是国内提供的一些npm仓库地址，常用的有：</p><p><a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></p><p><a href="http://r.cnpmjs.org/" target="_blank" rel="noopener">http://r.cnpmjs.org/</a></p><p>这两个都可以使用。如下面第二张图所示，配置好国内源后，安装一个较大的模块express，只用了不到6秒多一点，速度提升还是非常可观的。至此，nodejs和npm在windows上的配置就全部完毕。</p><p>如何运行vue项目：</p><p>参考：<a href="https://www.cnblogs.com/pengjunhao/p/6762141.html" target="_blank" rel="noopener">https://www.cnblogs.com/pengjunhao/p/6762141.html</a></p></li></ol>]]></content>
+      
+      
       <categories>
-        <category>-node配置</category>
+          
+          <category> -node配置 </category>
+          
       </categories>
-      <tags>
-        <tag>环境配置</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我的第一篇博客</title>
-    <url>/2020/04/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
-<hr>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容 </p>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="http://www.baidu.com" target="_blank" rel="noopener">www.baidu.com</a></p>
-]]></content>
-      <tags>
-        <tag>ceshi</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>get post请求的区别</title>
-    <url>/2020/08/12/get-post%E8%AF%B7%E6%B1%82%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
-    <content><![CDATA[<p>一、概述<br>http请求方式有get、post、put、delete等多种，最常用的就是get和post</p>
-<p> <img src="/2020/08/12/get-post%E8%AF%B7%E6%B1%82%E7%9A%84%E5%8C%BA%E5%88%AB/1.png" alt="img"></p>
-<p>多种请求方式<br>二、区别：<br>1、GET请求一般用去请求获取数据，</p>
-<pre><code>POST一般作为发送数据到后台时使用</code></pre><p>2、GET请求也可传参到后台，但是其参数在浏览器的地址栏的url中可见，所以隐私性安全性较差，且参数长度也是有限制的</p>
-<pre><code>POST请求传递参数放在Request body中，不会在url中显示，比GET要安全，且参数长度无限制</code></pre><p>3、GET请求刷新浏览器或回退时没有影响</p>
-<pre><code>POST回退时会重新提交数据请求</code></pre><p>4、GET 请求可被缓存</p>
-<pre><code>POST 请求不会被缓存</code></pre><p>5、GET 请求保留在浏览器历史记录中</p>
-<pre><code>POST 请求不会保留在浏览器历史记录中</code></pre><p>6、GET 请求可被收藏为书签</p>
-<pre><code>POST 不能被收藏为书签</code></pre><p>7、GET请求只能进行url编码（application/x-www-form-urlencoded）</p>
-<pre><code>POST支持多种编码方式（application/x-www-form-urlencoded 或 multipart/form-data。为二进制数据使用多重编码。）</code></pre><p>8、GET请求比较常见的方式是通过url地址栏请求</p>
-<pre><code>POST最常见是通过form表单发送数据请求</code></pre><p>三、进一步理解<br>个人查了一些资料后的理解：</p>
-<p>post请求和get请求都是HTTP的请求方式，本质上来说并无区别，底层实现都是基于TCP/IP协议。</p>
-<p>但是请求有各种各样的方式，于是HTTP对请求方式进行了划分和规定，于是产生了get、post处理请求的分工和区别。</p>
-<p>此外还有搜索到另外一个区别：GET产生一个TCP数据包；POST产生两个TCP数据包。</p>
-<p>对于GET方式的请求，浏览器会把http header和data一并发送出去，服务器响应200（返回数据）；</p>
-<p>而对于POST，浏览器先发送header，服务器响应100 continue，浏览器再发送data，服务器响应200 ok（返回数据）。</p>
-<ol>
-<li><p>GET与POST都有自己的语义，不能随便混用。</p>
-</li>
-<li><p>据研究，在网络环境好的情况下，发一次包的时间和发两次包的时间差别基本可以无视。而在网络环境差的情况下，两次包的TCP在验证数据包完整性上，有非常大的优点。</p>
-</li>
-<li><p>并不是所有浏览器都会在POST中发送两次包，Firefox就只发送一次。</p>
-</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>web前端</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常见的服务器状态码（二）</title>
-    <url>/2020/08/12/%E5%B8%B8%E8%A7%81%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%8A%B6%E6%80%81%E7%A0%81%EF%BC%88%E4%BA%8C%EF%BC%89/</url>
-    <content><![CDATA[<p>服务器常用的状态码<br>常见HTTP状态码</p>
-<p>Type</p>
-<p>Reason-phrase</p>
-<p>Note</p>
-<p>1XX</p>
-<p>Informational</p>
-<p>信息性状态码，表示接受的请求正在处理</p>
-<p>2XX</p>
-<p>Success</p>
-<p>成功状态码，表示请求正常处理完毕</p>
-<p>3XX</p>
-<p>Redirection</p>
-<p>重定向状态码，表示需要客户端需要进行附加操作</p>
-<p>4XX</p>
-<p>Client Error</p>
-<p>客户端错误状态码，表示服务器无法处理请求</p>
-<p>5XX</p>
-<p>Server Error</p>
-<p>服务器错误状态码，表示服务器处理请求出错</p>
-<p>100 Continue</p>
-<p>初始的请求已经接受，客户应当继续发送请求的其余部分</p>
-<p>101 Switching Protocols</p>
-<p>服务器将遵从客户的请求转换到另外一种协议</p>
-<p>200 OK</p>
-<p>一切正常，对GET和POST请求的应答文档跟在后面</p>
-<p>201 Created</p>
-<p>服务器已经创建了文档，Location头给出了它的URL。</p>
-<p>202 Accepted</p>
-<p>已经接受请求，但处理尚未完成。</p>
-<p>203 Non-Authoritative Information</p>
-<p>文档已经正常地返回，但一些应答头可能不正确，因为使用的是文档的拷贝</p>
-<p>204 No Content</p>
-<p>没有新文档，浏览器应该继续显示原来的文档。如果用户定期地刷新页面，而Servlet可以确定用户文档足够新，这个状态代码是很有用的</p>
-<p>205 Reset Content</p>
-<p>没有新的内容，但浏览器应该重置它所显示的内容。用来强制浏览器清除表单输入内容</p>
-<p>206 Partial Content</p>
-<p>客户发送了一个带有Range头的GET请求，服务器完成了它</p>
-<p>300 Multiple Choices</p>
-<p>客户请求的文档可以在多个位置找到，这些位置已经在返回的文档内列出。如果服务器要提出优先选择，则应该在Location应答头指明。</p>
-<p>301 Moved Permanently</p>
-<p>客户请求的文档在其他地方，新的URL在Location头中给出，浏览器应该自动地访问新的URL。</p>
-<p>302 Found</p>
-<p>类似于301，但新的URL应该被视为临时性的替代，而不是永久性的。</p>
-<p>303 See Other</p>
-<p>类似于301/302，不同之处在于，如果原来的请求是POST，Location头指定的重定向目标文档应该通过GET提取</p>
-<p>304 Not Modified</p>
-<p>客户端有缓冲的文档并发出了一个条件性的请求（一般是提供If-Modified-Since头表示客户只想比指定日期更新的文档）。服务器告诉客户，原来缓冲的文档还可以继续使用。</p>
-<p>305 Use Proxy</p>
-<p>客户请求的文档应该通过Location头所指明的代理服务器提取</p>
-<p>307 Temporary Redirect</p>
-<p>和302（Found）相同。许多浏览器会错误地响应302应答进行重定向，即使原来的请求是 POST，即使它实际上只能在POST请求的应答是303时才能重定向。由于这个原因，HTTP 1.1新增了307，以便更加清除地区分几个状态代码： 当出现303应答时，浏览器可以跟随重定向的GET和POST请求；如果是307应答，则浏览器只能跟随对GET请求的重定向。</p>
-<p>400 Bad Request</p>
-<p>请求出现语法错误。</p>
-<p>401 Unauthorized</p>
-<p>客户试图未经授权访问受密码保护的页面。应答中会包含一个WWW-Authenticate头，浏览器据此显示用户名字/密码对话框，然后在填写合适的Authorization头后再次发出请求。</p>
-<p>403 Forbidden</p>
-<p>资源不可用。没有权限访问资源</p>
-<p>404 Not Found</p>
-<p>无法找到指定位置的资源</p>
-<p>405 Method Not Allowed</p>
-<p>请求方法（GET、POST、HEAD、Delete、PUT、TRACE等）对指定的资源不适用。用来访问本页面的 HTTP 谓词不被允许（方法不被允许） </p>
-<p>406 Not Acceptable</p>
-<p>指定的资源已经找到，但它的MIME类型和客户在Accpet头中所指定的不兼容</p>
-<p>407 Proxy Authentication Required</p>
-<p>类似于401，表示客户必须先经过代理服务器的授权。</p>
-<p>408 Request Timeout</p>
-<p>在服务器许可的等待时间内，客户一直没有发出任何请求。客户可以在以后重复同一请求。</p>
-<p>409 Conflict</p>
-<p>通常和PUT请求有关。由于请求和资源的当前状态相冲突，因此请求不能成功。</p>
-<p>410 Gone</p>
-<p>所请求的文档已经不再可用，而且服务器不知道应该重定向到哪一个地址。它和404的不同在于，返回407表示文档永久地离开了指定的位置，而404表示由于未知的原因文档不可用。</p>
-<p>411 Length Required</p>
-<p>服务器不能处理请求，除非客户发送一个Content-Length头。</p>
-<p>412 Precondition Failed</p>
-<p>请求头中指定的一些前提条件失败</p>
-<p>413 Request Entity Too Large</p>
-<p>目标文档的大小超过服务器当前愿意处理的大小。如果服务器认为自己能够稍后再处理该请求，则应该提供一个Retry-After头</p>
-<p>414 Request URI Too Long</p>
-<p>URI太长</p>
-<p>416 Requested Range Not Satisfiable</p>
-<p>服务器不能满足客户在请求中指定的Range头</p>
-<p>500 Internal Server Error</p>
-<p>服务器遇到了意料不到的情况，不能完成客户的请求</p>
-<p>501 Not Implemented</p>
-<p>服务器不支持实现请求所需要的功能。例如，客户发出了一个服务器不支持的PUT请求</p>
-<p>502 Bad Gateway</p>
-<p>服务器作为网关或者代理时，为了完成请求访问下一个服务器，但该服务器返回了非法的应答</p>
-<p>503 Service Unavailable</p>
-<p>服务器由于维护或者负载过重未能应答。例如，Servlet可能在数据库连接池已满的情况下返回503。服务器返回503时可以提供一个Retry-After头</p>
-<p>504 Gateway Timeout</p>
-<p>由作为代理或网关的服务器使用，表示不能及时地从远程服务器获得应答</p>
-<p>505 HTTP Version Not Supported</p>
-<p>服务器不支持请求中所指明的HTTP版本</p>
-]]></content>
-      <tags>
-        <tag>web前端</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常见的服务器状态码（一）</title>
-    <url>/2020/08/12/%E5%B8%B8%E8%A7%81%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%8A%B6%E6%80%81%E7%A0%81%EF%BC%88%E4%B8%80%EF%BC%89/</url>
-    <content><![CDATA[<p>如果向您的服务器发出了某项请求要求显示您网站上的某个网页，那么，您的服务器会返回 HTTP 状态代码以响应该请求。<br>一些常见的状态代码为：<br>200 - 服务器成功返回网页<br>404 - 请求的网页不存在<br>503 - 服务器暂时不可用<br>以下提供了 HTTP 状态代码的完整列表。点击链接可了解详细信息。您也可以访问有关 HTTP 状态代码的 W3C 页来了解详细信息。<br>1xx（临时响应）<br>用于表示临时响应并需要请求者执行操作才能继续的状态代码。<br>代码 说明<br>100（继续） 请求者应当继续提出请求。服务器返回此代码则意味着，服务器已收到了请求的第一部分，现正在等待接收其余部分。<br>101（切换协议） 请求者已要求服务器切换协议，服务器已确认并准备进行切换。<br>2xx（成功）<br>用于表示服务器已成功处理了请求的状态代码。<br>代码 说明<br>200（成功） 服务器已成功处理了请求。通常，这表示服务器提供了请求的网页。如果您的 robots.txt 文件显示为此状态，那么，这表示 Googlebot 已成功检索到该文件。<br>201（已创建） 请求成功且服务器已创建了新的资源。<br>202（已接受） 服务器已接受了请求，但尚未对其进行处理。<br>203（非授权信息） 服务器已成功处理了请求，但返回了可能来自另一来源的信息。<br>204（无内容） 服务器成功处理了请求，但未返回任何内容。<br>205（重置内容） 服务器成功处理了请求，但未返回任何内容。与 204 响应不同，此响应要求请求者重置文档视图（例如清除表单内容以输入新内容）。<br>206（部分内容） 服务器成功处理了部分 GET 请求。<br>3xx（已重定向）<br>要完成请求，您需要进一步进行操作。通常，这些状态代码是永远重定向的。Google 建议您在每次请求时使用的重定向要少于 5 个。您可以使用网站管理员工具来查看 Googlebot 在抓取您已重定向的网页时是否会遇到问题。诊断下的抓取错误页中列出了 Googlebot 由于重定向错误而无法抓取的网址。<br>代码 说明<br>300（多种选择） 服务器根据请求可执行多种操作。服务器可根据请求者 (User agent) 来选择一项操作，或提供操作列表供请求者选择。<br>301（永久移动） 请求的网页已被永久移动到新位置。服务器返回此响应（作为对 GET 或 HEAD 请求的响应）时，会自动将请求者转到新位置。您应使用此代码通知 Googlebot 某个网页或网站已被永久移动到新位置。<br>302（临时移动） 服务器目前正从不同位置的网页响应请求，但请求者应继续使用原有位置来进行以后的请求。此代码与响应 GET 和 HEAD 请求的 301 代码类似，会自动将请求者转到不同的位置。但由于 Googlebot 会继续抓取原有位置并将其编入索引，因此您不应使用此代码来通知 Googlebot 某个页面或网站已被移动。<br>303（查看其他位置） 当请求者应对不同的位置进行单独的 GET 请求以检索响应时，服务器会返回此代码。对于除 HEAD 请求之外的所有请求，服务器会自动转到其他位置。<br>304（未修改） 自从上次请求后，请求的网页未被修改过。服务器返回此响应时，不会返回网页内容。<br>如果网页自请求者上次请求后再也没有更改过，您应当将服务器配置为返回此响应（称为 If-Modified-Since HTTP 标头）。由于服务器可以告诉 Googlebot 自从上次抓取后网页没有更改过，因此可节省带宽和开销<br>。<br>305（使用代理） 请求者只能使用代理访问请求的网页。如果服务器返回此响应，那么，服务器还会指明请求者应当使用的代理。<br>307（临时重定向） 服务器目前正从不同位置的网页响应请求，但请求者应继续使用原有位置来进行以后的请求。此代码与响应 GET 和 HEAD 请求的 301 代码类似，会自动将请求者转到不同的位置。但由于 Googlebot 会继续抓取原有位置并将其编入索引，因此您不应使用此代码来通知 Googlebot 某个页面或网站已被移动。<br>4xx（请求错误）<br>这些状态代码表示，请求可能出错，已妨碍了服务器对请求的处理。<br>代码 说明<br>400（错误请求） 服务器不理解请求的语法。<br>401（未授权） 请求要求进行身份验证。登录后，服务器可能会返回对页面的此响应。<br>403（已禁止） 服务器拒绝请求。如果在 Googlebot 尝试抓取您网站上的有效网页时显示此状态代码（您可在 Google 网站管理员工具中诊 断下的网络抓取页面上看到此状态代码），那么，这可能是您的服务器或主机拒绝 Googlebot 对其进行访问。<br>404（未找到） 服务器找不到请求的网页。例如，如果请求是针对服务器上不存在的网页进行的，那么，服务器通常会返回此代码。<br>如果您的网站上没有 robots.txt 文件，而您在 Google 网站管理员工具” 诊断”标签的 robots.txt 页上发现此状态，那么，这是正确的状态。然而，如果您有 robots.txt 文件而又发现了此状态，那么，这说明您的 robots.txt 文件可能是命名错误或位于错误的位置。（该文件应当位于顶级域名上，且应当名为 robots.txt）。<br>如果您在 Googlebot 尝试抓取的网址上发现此状态（位于”诊断”标签的 HTTP 错误页上），那么，这表示 Googlebot 所追踪的可能是另一网页中的无效链接（旧链接或输入有误的链接）。</p>
-<p>405（方法禁用） 禁用请求中所指定的方法。<br>406（不接受） 无法使用请求的内容特性来响应请求的网页。<br>407（需要代理授权） 此状态代码与 401（未授权）类似，但却指定了请求者应当使用代理进行授权。如果服务器返回此响应，那么，服务器还会指明请求者应当使用的代理。<br>408（请求超时） 服务器等候请求时超时。<br>409（冲突） 服务器在完成请求时发生冲突。服务器必须包含有关响应中所发生的冲突的信息。服务器在响应与前一个请求相冲突的 PUT 请求时可能会返回此代码，同时会提供两个请求的差异列表。<br>410（已删除） 如果请求的资源已被永久删除，那么，服务器会返回此响应。该代码与 404（未找到）代码类似，但在资源以前有但现在已经不复存在的情况下，有时会替代 404 代码出现。如果资源已被永久删除，那么，您应当使用 301 代码指定该资源的新位置。<br>411（需要有效长度） 服务器不会接受包含无效内容长度标头字段的请求。<br>412（未满足前提条件） 服务器未满足请求者在请求中设置的其中一个前提条件。<br>413（请求实体过大） 服务器无法处理请求，因为请求实体过大，已超出服务器的处理能力。<br>414（请求的 URI 过长） 请求的 URI（通常为网址）过长，服务器无法进行处理。<br>415（不支持的媒体类型） 请求的格式不受请求页面的支持。<br>416（请求范围不符合要求） 如果请求是针对网页的无效范围进行的，那么，服务器会返回此状态代码。<br>417（未满足期望值） 服务器未满足”期望”请求标头字段的要求。<br>5xx（服务器错误）<br>这些状态代码表示，服务器在尝试处理请求时发生内部错误。这些错误可能是服务器本身的错误，而不是请求出错。<br>代码 说明<br>500（服务器内部错误） 服务器遇到错误，无法完成请求。<br>501（尚未实施） 服务器不具备完成请求的功能。例如，当服务器无法识别请求方法时，服务器可能会返回此代码。<br>502（错误网关） 服务器作为网关或代理，从上游服务器收到了无效的响应。<br>503（服务不可用） 目前无法使用服务器（由于超载或进行停机维护）。通常，这只是一种暂时的状态。<br>504（网关超时） 服务器作为网关或代理，未及时从上游服务器接收请求。<br>505（HTTP 版本不受支持）</p>
-]]></content>
-      <tags>
-        <tag>web前端</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> 环境配置 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何查看某个端口被谁占用，结束进程</title>
+      <link href="/2020/05/27/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E8%A2%AB%E8%B0%81%E5%8D%A0%E7%94%A8%EF%BC%8C%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/"/>
+      <url>/2020/05/27/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E8%A2%AB%E8%B0%81%E5%8D%A0%E7%94%A8%EF%BC%8C%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/</url>
+      
+        <content type="html"><![CDATA[<h1 id="如何查看某个端口被谁占用，结束进程"><a href="#如何查看某个端口被谁占用，结束进程" class="headerlink" title="如何查看某个端口被谁占用，结束进程"></a>如何查看某个端口被谁占用，结束进程</h1><h2 id="1-开始—-gt-运行—-gt-cmd，或者是window-R组合键，调出命令窗口"><a href="#1-开始—-gt-运行—-gt-cmd，或者是window-R组合键，调出命令窗口" class="headerlink" title="1.开始—-&gt;运行—-&gt;cmd，或者是window+R组合键，调出命令窗口"></a>1.开始—-&gt;运行—-&gt;cmd，或者是window+R组合键，调出命令窗口</h2><p><img src="/2020/05/27/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E8%A2%AB%E8%B0%81%E5%8D%A0%E7%94%A8%EF%BC%8C%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/1.png" alt="1"></p><h2 id="2-输入命令：netstat-ano，列出所有端口的情况。在列表中我们观察被占用的端口，比如是9010，首先找到它。"><a href="#2-输入命令：netstat-ano，列出所有端口的情况。在列表中我们观察被占用的端口，比如是9010，首先找到它。" class="headerlink" title="2.输入命令：netstat -ano，列出所有端口的情况。在列表中我们观察被占用的端口，比如是9010，首先找到它。"></a>2.输入命令：netstat -ano，列出所有端口的情况。在列表中我们观察被占用的端口，比如是9010，首先找到它。</h2><p><img src="/2020/05/27/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E8%A2%AB%E8%B0%81%E5%8D%A0%E7%94%A8%EF%BC%8C%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/4.png" alt="2"></p><h2 id="3-查看被占用端口对应的PID，输入命令：netstat-aon-findstr-“9010”，回车，记下最后一位数字，即PID-这里是2900。"><a href="#3-查看被占用端口对应的PID，输入命令：netstat-aon-findstr-“9010”，回车，记下最后一位数字，即PID-这里是2900。" class="headerlink" title="3.查看被占用端口对应的PID，输入命令：netstat -aon|findstr “9010”，回车，记下最后一位数字，即PID,这里是2900。"></a>3.查看被占用端口对应的PID，输入命令：netstat -aon|findstr “9010”，回车，记下最后一位数字，即PID,这里是2900。</h2><h2 id="4-继续输入tasklist-findstr-“2900”，回车，查看是哪个进程或者程序占用了2900端口，结果是：lghub-agent-exe"><a href="#4-继续输入tasklist-findstr-“2900”，回车，查看是哪个进程或者程序占用了2900端口，结果是：lghub-agent-exe" class="headerlink" title="4.继续输入tasklist|findstr “2900”，回车，查看是哪个进程或者程序占用了2900端口，结果是：lghub_agent.exe"></a>4.继续输入tasklist|findstr “2900”，回车，查看是哪个进程或者程序占用了2900端口，结果是：lghub_agent.exe</h2><p><img src="/2020/05/27/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E8%A2%AB%E8%B0%81%E5%8D%A0%E7%94%A8%EF%BC%8C%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/3.png" alt="3"></p><h2 id="5-结束该进程：在任务管理器中选中该进程点击”结束进程“按钮，或者是在cmd的命令窗口中输入：taskkill-f-t-im-lghub-agent-exe"><a href="#5-结束该进程：在任务管理器中选中该进程点击”结束进程“按钮，或者是在cmd的命令窗口中输入：taskkill-f-t-im-lghub-agent-exe" class="headerlink" title="5.结束该进程：在任务管理器中选中该进程点击”结束进程“按钮，或者是在cmd的命令窗口中输入：taskkill /f /t /im lghub_agent.exe"></a>5.结束该进程：在任务管理器中选中该进程点击”结束进程“按钮，或者是在cmd的命令窗口中输入：taskkill /f /t /im lghub_agent.exe</h2>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> ceshi </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo本地图片导入</title>
+      <link href="/2020/04/13/hexo%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E5%AF%BC%E5%85%A5/"/>
+      <url>/2020/04/13/hexo%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E5%AF%BC%E5%85%A5/</url>
+      
+        <content type="html"><![CDATA[<h2 id="图片测试"><a href="#图片测试" class="headerlink" title="图片测试"></a>图片测试</h2><p><img src="/2020/04/13/hexo%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E5%AF%BC%E5%85%A5/2.png" alt="代码"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> ceshi </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的第一篇博客</title>
+      <link href="/2020/04/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+      <url>/2020/04/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+      
+        <content type="html"><![CDATA[<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p><hr><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容 </p><hr><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="http://www.baidu.com" target="_blank" rel="noopener">www.baidu.com</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> ceshi </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2020/04/12/hello-world/"/>
+      <url>/2020/04/12/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> default </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
