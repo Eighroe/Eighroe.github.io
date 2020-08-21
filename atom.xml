@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://eighroe.github.io/"/>
-  <updated>2020-08-14T06:02:53.853Z</updated>
+  <updated>2020-08-21T02:15:38.088Z</updated>
   <id>http://eighroe.github.io/</id>
   
   <author>
@@ -15,6 +15,41 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>css自适应布局vw vh详解</title>
+    <link href="http://eighroe.github.io/2020/08/21/css%E8%87%AA%E9%80%82%E5%BA%94%E5%B8%83%E5%B1%80vw-vh%E8%AF%A6%E8%A7%A3/"/>
+    <id>http://eighroe.github.io/2020/08/21/css%E8%87%AA%E9%80%82%E5%BA%94%E5%B8%83%E5%B1%80vw-vh%E8%AF%A6%E8%A7%A3/</id>
+    <published>2020-08-21T02:12:36.000Z</published>
+    <updated>2020-08-21T02:15:38.088Z</updated>
+    
+    <content type="html"><![CDATA[<p>视口单位(Viewport units)</p><p>什么是视口？ </p><p>在PC端，视口指的是在PC端，指的是浏览器的可视区域；</p><p>而在移动端，它涉及3个视口：Layout Viewport（布局视口），Visual Viewport（视觉视口），Ideal Viewport（理想视口）。</p><p>视口单位中的“视口”，PC端指的是浏览器的可视区域；移动端指的就是Viewport中的Layout Viewport。</p><p> 根据CSS3规范，视口单位主要包括以下4个：</p><pre><code>1.vw：1vw等于视口宽度的1%。2.vh：1vh等于视口高度的1%。3.vmin：选取vw和vh中最小的那个。4.vmax：选取vw和vh中最大的那个。</code></pre><p> vh and vw：相对于视口的高度和宽度，而不是父元素的（CSS百分比是相对于包含它的最近的父元素的高度和宽度）。1vh 等于1/100的视口高度，1vw 等于1/100的视口宽度。</p><p>比如：浏览器高度950px，宽度为1920px, 1 vh = 950px/100 = 9.5 px，1vw = 1920px/100 =19.2 px。</p><p>vmax相对于视口的宽度或高度中较大的那个。其中最大的那个被均分为100单位的vmax。</p><p>vmin相对于视口的宽度或高度中较小的那个。其中最小的那个被均分为100单位的vmin。</p><p>  <img src="/2020/08/21/css%E8%87%AA%E9%80%82%E5%BA%94%E5%B8%83%E5%B1%80vw-vh%E8%AF%A6%E8%A7%A3/1.jpg" alt="img"></p><p>vh/vw与%区别<br> <img src="/2020/08/21/css%E8%87%AA%E9%80%82%E5%BA%94%E5%B8%83%E5%B1%80vw-vh%E8%AF%A6%E8%A7%A3/2.jpg" alt="img"></p><p>请看下面简单的栗子：</p><!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta http-equiv="X-UA-Compatible" content="ie=edge">    <title>VW&VH</title><link rel="alternate" href="/atom.xml" title="Eiroe's blog" type="application/atom+xml"></head><style>    * {        padding: 0;        margin: 0    }<pre><code>.left {    float: left;    width: 50vw;    height: 20vh;    background-color: blue;    text-align: center;    line-height: 20vh;    font-size: 3rem}.right {    float: right;    width: 50vw;    height: 20vh;    background-color: green;    text-align: center;    line-height: 20vh;    font-size: 3rem}</code></pre><p></style><p></p><body>    <div class="left">left</div>    <div class="right">right</div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body></html><p>兼容性问题(在移动端 iOS 8 以上以及 Android 4.4 以上获得支持，并且在微信 x5 内核中也得到完美的全面支持)<br> <img src="/2020/08/21/css%E8%87%AA%E9%80%82%E5%BA%94%E5%B8%83%E5%B1%80vw-vh%E8%AF%A6%E8%A7%A3/3.png" alt="img"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;视口单位(Viewport units)&lt;/p&gt;
+&lt;p&gt;什么是视口？ &lt;/p&gt;
+&lt;p&gt;在PC端，视口指的是在PC端，指的是浏览器的可视区域；&lt;/p&gt;
+&lt;p&gt;而在移动端，它涉及3个视口：Layout Viewport（布局视口），Visual Viewport（视觉视口），Ideal Viewport（理想视口）。&lt;/p&gt;
+&lt;p&gt;视口单位中的“视口”，PC端指的是浏览器的可视区域；移动端指的就是Viewport中的Layout Viewport。&lt;/p&gt;
+&lt;p&gt; 根据CSS3规范，视口单位主要包括以下4个：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1.vw：1vw等于视口宽度的1%。
+
+2.vh：1vh等于视口高度的1%。
+
+3.vmin：选取vw和vh中最小的那个。
+
+4.vmax：选取vw和vh中最大的那个。&lt;/code&gt;&lt;/pre&gt;&lt;p&gt; vh and vw：相对于视口的高度和宽度，而不是父元素的（CSS百分比是相对于包含它的最近的父元素的高度和宽度）。1vh 等于1/100的视口高度，1vw 等于1/100的视口宽度。&lt;/p&gt;
+&lt;p&gt;比如：浏览器高度950px，宽度为1920px, 1 vh = 950px/100 = 9.5 px，1vw = 1920px/100 =19.2 px。&lt;/p&gt;
+&lt;p&gt;vmax相对于视口的宽度或高度中较大的那个。其中最大的那个被均分为100单位的vmax。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="web前端" scheme="http://eighroe.github.io/tags/web%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>git命令速查</title>
